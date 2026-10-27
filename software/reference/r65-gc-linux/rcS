@@ -1,0 +1,19 @@
+#!/bin/sh
+export PATH=/bin:/sbin
+export HOME=/root
+export TERM=vt100
+fail() { echo "LINUX_SELFTEST_FAIL r54-init-$1"; exit 1; }
+mount -t proc proc /proc 2>/dev/null
+mount -t sysfs sysfs /sys 2>/dev/null
+mount -t devtmpfs devtmpfs /dev 2>/dev/null
+mount -t tmpfs tmpfs /tmp || fail tmpfs
+echo RV64_LINUX_INIT_STARTED
+echo 'RV64Lab R54 recovery userspace. Process/MMU selftest follows.'
+uname -a
+/bin/linux-selftest || fail userspace
+
+echo RV64_GC_CONTEXT_TEST_BEGIN
+/bin/fp-context-test || fail fp-context
+echo RV64_GC_DEBIAN_SMOKE_BEGIN
+/bin/sh /opt/debian/run-smoke.sh || fail debian-smoke
+echo RV64_GC_USERSPACE_ACCEPTANCE_PASS

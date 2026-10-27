@@ -1,0 +1,10 @@
+#!/bin/sh
+export PATH=/bin:/sbin
+export HOME=/root
+export TERM=vt100
+fail() { echo "LINUX_SELFTEST_FAIL init-$1"; exit 1; }
+mount -t proc proc /proc || fail proc
+mount -t sysfs sysfs /sys || fail sysfs
+mount -t tmpfs tmpfs /tmp || fail tmpfs
+echo RV64_LINUX_INIT_STARTED
+/bin/linux-selftest || fail userspace

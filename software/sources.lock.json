@@ -1,0 +1,44 @@
+{
+  "purpose": "Pinned educational Linux bring-up, not an up-to-date production/security distribution",
+  "linux_binutils": {
+    "version": "2.38-4ubuntu2.12",
+    "archive": "binutils-riscv64-linux-gnu_2.38-4ubuntu2.12_amd64.deb",
+    "url": "https://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils-riscv64-linux-gnu_2.38-4ubuntu2.12_amd64.deb",
+    "sha256": "b20f8bdabeff0a43fba1efdc8b1c1d359d93e8a135d11041fd90ed945c23e866",
+    "digest_source": "Ubuntu jammy-updates package index, apt-cache show binutils-riscv64-linux-gnu"
+  },
+  "linux": {
+    "version": "6.6.80",
+    "archive": "linux-6.6.80.tar.xz",
+    "directory": "linux-6.6.80",
+    "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.80.tar.xz",
+    "sha256": "6cf911d01324f45c9dd2f44cf06f55bda0ecf383bc498f132a0c549768531327",
+    "digest_source": "https://cdn.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc"
+  },
+  "opensbi": {
+    "version": "1.6",
+    "tag_object": "958c08fa3d21612f6fdc684395011e040e9c8c22",
+    "commit": "bd613dd92113f683052acfb23d9dc8ba60029e0a",
+    "archive": "opensbi-v1.6.tar.gz",
+    "directory": "opensbi-1.6",
+    "url": "https://codeload.github.com/riscv-software-src/opensbi/tar.gz/refs/tags/v1.6",
+    "sha256": "d11702103f177a2914e94eec57ce5ed820296d874f6b6525c4482e55d71a3667",
+    "digest_source": "observed HTTPS archive; annotated upstream tag resolved through GitHub API, no local GPG signature verification claimed"
+  },
+  "musl": {
+    "version": "1.2.5",
+    "archive": "musl-1.2.5.tar.gz",
+    "directory": "musl-1.2.5",
+    "url": "https://musl.libc.org/releases/musl-1.2.5.tar.gz",
+    "sha256": "a9a118bbe84d8764da0ea0d28b3ab3fae8477fc7e4085d90102b8596fc7c75e4",
+    "digest_source": "observed official HTTPS release archive; no local signature verification claimed"
+  },
+  "busybox": {
+    "version": "1.36.1",
+    "archive": "busybox-1.36.1.tar.bz2",
+    "directory": "busybox-1.36.1",
+    "url": "https://busybox.net/downloads/busybox-1.36.1.tar.bz2",
+    "sha256": "b8cc24c9574d809e7279c3be349795c5d5ceb6fdf19ca709f80cde50e47de314",
+    "digest_source": "https://busybox.net/downloads/busybox-1.36.1.tar.bz2.sha256"
+  }
+}

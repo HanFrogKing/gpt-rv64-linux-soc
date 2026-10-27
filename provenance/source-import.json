@@ -1,0 +1,871 @@
+{
+  "snapshot_sha256": "1552d5835e47cb10c7939d18bc2379237be509f3dafffe8dea98bf62950141ca",
+  "research_branch": "research/rv64",
+  "research_head": "5316c60de5e07128e7685992135b0c485a01981c",
+  "working_tree_snapshot": true,
+  "stable_hardware": "R106",
+  "stable_kernel": "R111 storage-r2",
+  "desktop_configuration": "R115",
+  "date": "2026-10-28",
+  "files": [
+    {
+      "path": "fpga/rk-zynq7020-f/constraints/board-r1.xdc",
+      "sha256": "a51e3f814efe668c9e82c0a46624d48e84f2a9d921261c9504223bcc5210943e",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/constraints/board-r1.xdc"
+    },
+    {
+      "path": "fpga/rk-zynq7020-f/rtl/gc_video_board.v",
+      "sha256": "a813ab6138df76e21961f4bc8dfe0613934612f037de27f08ff1456e95b51529",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/rtl/gc_video_board.v"
+    },
+    {
+      "path": "fpga/rk-zynq7020-f/rtl/rv64_tmds_serializer_7series.sv",
+      "sha256": "622db54eac58db8febfa54cd6acf783718dc103d65c3537b2ec97d2befbaea64",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/rtl/rv64_tmds_serializer_7series.sv"
+    },
+    {
+      "path": "rtl/rv64/board/rv64_board_decode_video.sv",
+      "sha256": "ecbcc844ee0ce0e2cfc3cf82d356d6d5c948432ba9518a7fce452d2f23d9d9f3",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/board/rv64_board_decode_video.sv"
+    },
+    {
+      "path": "rtl/rv64/board/rv64_board_system_video.sv",
+      "sha256": "0756012c52c11a3f239ad5ca3f4fb56743fafc0ceef85bae7a68ae78d1dafe0b",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/board/rv64_board_system_video.sv"
+    },
+    {
+      "path": "rtl/rv64/board/rv64_boot_rom.sv",
+      "sha256": "90a2bb4c1a7bef0fc781dc8d45db1353cd7f0df1ae34ed1186619eabfb78c45d",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/board/rv64_boot_rom.sv"
+    },
+    {
+      "path": "rtl/rv64/board/rv64_clint.sv",
+      "sha256": "22078b4656369bfb5a0ba1793ea5c5ebb993a097013a403518b813b9c7a4ab35",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/board/rv64_clint.sv"
+    },
+    {
+      "path": "rtl/rv64/board/rv64_ddr_window.sv",
+      "sha256": "8110e2a934f0c9808a8392baa814e9938f8aaaf7553e22424dc3462ee3b74994",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/board/rv64_ddr_window.sv"
+    },
+    {
+      "path": "rtl/rv64/board/rv64_dma_cache_control.sv",
+      "sha256": "b88b303fccc8158491a16bff6b94da564898b31f6842af7a12e55e9f874dbb48",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/board/rv64_dma_cache_control.sv"
+    },
+    {
+      "path": "rtl/rv64/board/rv64_plic.sv",
+      "sha256": "f02352d16f1abec1a60c8573ae5fdce13e7173eb6fbf161bdeb60ff22fa0412d",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/board/rv64_plic.sv"
+    },
+    {
+      "path": "rtl/rv64/dmacache/rv64_dcache.sv",
+      "sha256": "d69801dfbbae07e509d7d9342a69e5c36bc4c8ddbe15ce84370a8d20584e3cfd",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/dmacache/rv64_dcache.sv"
+    },
+    {
+      "path": "rtl/rv64/dual/rv64_dual_cache_arbiter.sv",
+      "sha256": "1bd51875c14cef999faebde4a2a49590f4136e91de7ce69a9f862bcbcd3c42dc",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/dual/rv64_dual_cache_arbiter.sv"
+    },
+    {
+      "path": "rtl/rv64/dual/rv64_dual_icache.sv",
+      "sha256": "b2723a3b9a9694da3c4577fe68a3c001ead7adc0b1b07c57e845094bf63a892c",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/dual/rv64_dual_icache.sv"
+    },
+    {
+      "path": "rtl/rv64/dual/rv64_dual_regfile.sv",
+      "sha256": "386fc9b07f1214b05e8fc5274c7c014cf4d03e2e9bc28fe918e781b0bbeac6c4",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/dual/rv64_dual_regfile.sv"
+    },
+    {
+      "path": "rtl/rv64/fastmul/rv64_muldiv.sv",
+      "sha256": "34fadccd5fbaa8d19f4cd5cd22574e201e3d842ec77b25ca621c041339ffc92b",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/fastmul/rv64_muldiv.sv"
+    },
+    {
+      "path": "rtl/rv64/fp/rv64_fp_state.sv",
+      "sha256": "38314d1abd27773c53b8aea4e614f03e23a3fff04b364d102805e154e1e24fb9",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/fp/rv64_fp_state.sv"
+    },
+    {
+      "path": "rtl/rv64/fpintpipe/rv64_fp_execute.sv",
+      "sha256": "8ec435053830b347f6a7bd4ea2a77fc5fda06f59b28def0aef4512dc53ccde62",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/fpintpipe/rv64_fp_execute.sv"
+    },
+    {
+      "path": "rtl/rv64/rv64_alu.sv",
+      "sha256": "fdbe479bcdc9e95a0b23418d691daa125efa0d71b3cbe063c98ae02f51239646",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/rv64_alu.sv"
+    },
+    {
+      "path": "rtl/rv64/rv64_atomic.sv",
+      "sha256": "d50284cc976af97bde5b993c052dc98b374714400d8e4a1eae76f6ec7a4102e4",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/rv64_atomic.sv"
+    },
+    {
+      "path": "rtl/rv64/rv64_axi_transfer.sv",
+      "sha256": "2c393066dcdade8c3c0fb4e36300d335c4975d7ba0b0455996cdde6d1d3689e3",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/rv64_axi_transfer.sv"
+    },
+    {
+      "path": "rtl/rv64/rv64_cache_fence.sv",
+      "sha256": "91f931ed0f2005dcbc4bdaa17e6399d333d9571b79fad98b8548a93b510d4b98",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/rv64_cache_fence.sv"
+    },
+    {
+      "path": "rtl/rv64/rv64_decode.sv",
+      "sha256": "3caf3bb50e91f4809b412d625cd0af8f7fffd8e32210e195ff6bbba5f7a17153",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/rv64_decode.sv"
+    },
+    {
+      "path": "rtl/rv64/rv64_mmu.sv",
+      "sha256": "d6aaf84696f6c609452dba9488bbd607b71cb646c0b24b95a6674dab16e0cedb",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/rv64_mmu.sv"
+    },
+    {
+      "path": "rtl/rv64/rvc/rv64_rvc_decode.sv",
+      "sha256": "f55e6c0a89a4f12682d835e56c06738aa751e445819171b5477654ecba9248c0",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/rvc/rv64_rvc_decode.sv"
+    },
+    {
+      "path": "rtl/rv64/seip/rv64_dual_core.sv",
+      "sha256": "555124dad6fb3cd4b5c921504dba1e9c4f6558c4d09e685e4e0dce5e10e6800c",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/seip/rv64_dual_core.sv"
+    },
+    {
+      "path": "rtl/rv64/seip/rv64_dual_csr.sv",
+      "sha256": "ac068a4c406a28b6d4ece92a4b82996a015a3581b2bedbb7634dc6551c807873",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/seip/rv64_dual_csr.sv"
+    },
+    {
+      "path": "rtl/rv64/takenbp/rv64_branch_predictor.sv",
+      "sha256": "a02d88be4747d57f3195a11a2ba9630e2399a37d8964135e1cd0bebc70fb6130",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/takenbp/rv64_branch_predictor.sv"
+    },
+    {
+      "path": "rtl/rv64/turnpayload/rv64_lsu.sv",
+      "sha256": "c7c5ecbafc69b6c177b78a0b7a886efa0f45d145640870af31c8896903885f06",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/turnpayload/rv64_lsu.sv"
+    },
+    {
+      "path": "rtl/rv64/video/rv64_ddr_scanout.sv",
+      "sha256": "668d74233052502c7b0268c5f04ec2782e07e270b2827316e5440cdcebb76085",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/video/rv64_ddr_scanout.sv"
+    },
+    {
+      "path": "rtl/rv64/video/rv64_frame_axi_reader.sv",
+      "sha256": "c80475d68f5f35fa0b0146ca51216d8bdab65f03173257626a0d67736a8e4b31",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/video/rv64_frame_axi_reader.sv"
+    },
+    {
+      "path": "rtl/rv64/video/rv64_pixel_async_fifo.sv",
+      "sha256": "eaa7e16e8b5cdf0e67f21fe5168c406c44aeda2fe2448117616026303d31794c",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/video/rv64_pixel_async_fifo.sv"
+    },
+    {
+      "path": "rtl/rv64/video/rv64_pixel_consumer.sv",
+      "sha256": "0ae93662bbb7cc8a8039a91d1f0a312705d4a4bee9bccbe3bf3bfdc267d00225",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/video/rv64_pixel_consumer.sv"
+    },
+    {
+      "path": "rtl/rv64/video/rv64_scanout_control.sv",
+      "sha256": "67680b2507404fc069918fa2a9a8e2f473ade021478156b8132f0d7350773c21",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/video/rv64_scanout_control.sv"
+    },
+    {
+      "path": "rtl/rv64/video/rv64_tmds_encoder.sv",
+      "sha256": "e894311b812d822f9a45fb82f1841ad3d7c4f104eff7191744f0f165dcc52f20",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/video/rv64_tmds_encoder.sv"
+    },
+    {
+      "path": "rtl/rv64/video/rv64_video_timing.sv",
+      "sha256": "a3b9a641d57c407f6889d8efc85c20ebb32cc233768b0776cbe4e5ac48247c48",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/rtl/rv64/video/rv64_video_timing.sv"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/HardFloat_consts.vi",
+      "sha256": "53d4c22ee61b9b81bc763330959327914d8e1952e15f3f66361d1a4e34e2802f",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/HardFloat_consts.vi"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/HardFloat_localFuncs.vi",
+      "sha256": "e6e8d53f362dc2c9fe14c9b0edbc73bc6367d8899276b3384e947a17029b5d50",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/HardFloat_localFuncs.vi"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/HardFloat_primitives.v",
+      "sha256": "5a1d0823a066395eda8191b3a556c414e6120b8085ff43ce383980d84af47f9f",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/HardFloat_primitives.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/HardFloat_rawFN.v",
+      "sha256": "353cad0b733c601f5c2449dc75f1ddefa34dc5c2466ac82540302303899fe355",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/HardFloat_rawFN.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/RISCV/HardFloat_specialize.v",
+      "sha256": "de4442606d2c51bf30c0476d289fa7f955273c8bb58c1484f0e745b76bc8d316",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/RISCV/HardFloat_specialize.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/RISCV/HardFloat_specialize.vi",
+      "sha256": "c252f7e1638f63838f66e6f469bf86fdec0e4396f6b0be69172623a26519307c",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/RISCV/HardFloat_specialize.vi"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/addRecFN.v",
+      "sha256": "15fb5387ab0deff63670ed144189e9f263c61ffc909d06697974c49d11ba5dc3",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/addRecFN.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/compareRecFN.v",
+      "sha256": "b88d572db1cea8d5275aeb1db7dcdfabad74281fdc29378940fd4b20f7326d69",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/compareRecFN.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/divSqrtRecFN_small.v",
+      "sha256": "45022c22a4502e7c0ca1e13e8696952d90eb3d486f82a104e90e1f5e3f2a2eb1",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/divSqrtRecFN_small.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/fNToRecFN.v",
+      "sha256": "7aca940370a4ecf1b52774cec62e90252d090f20a4acd5f577cf88565266426c",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/fNToRecFN.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/iNToRecFN.v",
+      "sha256": "bb7a5cd239ebc2f95a7eb9047534f1e530f148f5d017dd664c3f252bccb25f1c",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/iNToRecFN.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/isSigNaNRecFN.v",
+      "sha256": "77e37250ec9c18c4484c23eda48bfcf7df8dec1a3d3b2c1a1e5804386a25de8b",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/isSigNaNRecFN.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/mulAddRecFN.v",
+      "sha256": "268c38c2433e66337900a4ad67daf393ffa6f4aaa43552728bc786a83604008b",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/mulAddRecFN.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/mulRecFN.v",
+      "sha256": "5a6a263dcde9f38f0fabef87ceb41e1bdff63c46d151c7c65e404467354bee43",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/mulRecFN.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/recFNToFN.v",
+      "sha256": "62d42a8f004f00f9a688c5e45302ceff22148313b3602840e5d05a13e9391e96",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/recFNToFN.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/recFNToIN.v",
+      "sha256": "881c05985ee57e1006988661236708c74269352957d94f65c88696c1a7928877",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/recFNToIN.v"
+    },
+    {
+      "path": "third_party/HardFloat-1-compat/source/recFNToRecFN.v",
+      "sha256": "3ec9a39057e64d7fb42893c12f0e19b36af7226669ba53671d6abe19db0722fc",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/source/third_party/HardFloat-1-compat/source/recFNToRecFN.v"
+    },
+    {
+      "path": "fpga/rk-zynq7020-f/reference/board.bd",
+      "sha256": "129e4771b6e2eb15ae0ce24fd9b39eb31e35c9e884cf2b908a74c84756f43e9f",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/reference/board.bd"
+    },
+    {
+      "path": "fpga/rk-zynq7020-f/reference/r98-board-r4.xdc",
+      "sha256": "9ae1c40b549d66e88cf0a8ebca44a787e86efd35fc549800a573abf88a36b0c5",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/reference/r98-board-r4.xdc"
+    },
+    {
+      "path": "fpga/rk-zynq7020-f/scripts/linked-cdc-constraints-r2.tcl",
+      "sha256": "58ef8dd094ea880bdd0322bf83bf97e78e8370ba90be060ccc2fcc52e47a155c",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/scripts/linked-cdc-constraints-r2.tcl"
+    },
+    {
+      "path": "fpga/rk-zynq7020-f/scripts/post-route-audit-r4.tcl",
+      "sha256": "18a3f699c8eb72491ec9ffe4866977990548452251f516a5ed2c5482a25062de",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/scripts/post-route-audit-r4.tcl"
+    },
+    {
+      "path": "fpga/rk-zynq7020-f/scripts/bram-control-audit-r2.tcl",
+      "sha256": "97067b6897085d95f63d658892eb08d748342f6bc1f88afa1b955d6344d99664",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/scripts/bram-control-audit-r2.tcl"
+    },
+    {
+      "path": "fpga/rk-zynq7020-f/scripts/write-bitstream-r1.tcl",
+      "sha256": "790f2c2c84ed51472a63a8bad4c5116107c1aef347e35a006dd692e5a8b947fe",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/scripts/write-bitstream-r1.tcl"
+    },
+    {
+      "path": "provenance/reference/build-board-r2.tcl",
+      "sha256": "c30f665e23d4828472cb41d2c804f50cc18e52b06967fbc6a97f83fa808b48a1",
+      "snapshot_path": "windows-board/rv64gc-scanout-r106/scripts/build-board-r2.tcl"
+    },
+    {
+      "path": "software/linux/overlay/arch/riscv/Kconfig",
+      "sha256": "7ec2e040a82c2b469c88b3e2f3604d4ed7d2b4810fe90edefb0738fba108f247",
+      "snapshot_path": "software/linux/overlay/arch/riscv/Kconfig"
+    },
+    {
+      "path": "software/linux/overlay/arch/riscv/kernel/setup.c",
+      "sha256": "50e5873387d9a4eb9b866f8ef413538efd7d83d0a19c4cd110700758c2492fc4",
+      "snapshot_path": "software/linux/overlay/arch/riscv/kernel/setup.c"
+    },
+    {
+      "path": "software/linux/overlay/arch/riscv/mm/Makefile",
+      "sha256": "4d99b8e79504ff6e6c15d3c04cb93fdbaf72a25dbe66b8e583369733a5765bb2",
+      "snapshot_path": "software/linux/overlay/arch/riscv/mm/Makefile"
+    },
+    {
+      "path": "software/linux/overlay/arch/riscv/include/asm/rv64lab-dma.h",
+      "sha256": "0808a969bf50154ceb5db21effffaed59650a8abf814635456f4a7e161dafdd9",
+      "snapshot_path": "software/linux/overlay/arch/riscv/include/asm/rv64lab-dma.h"
+    },
+    {
+      "path": "software/linux/overlay/arch/riscv/mm/rv64lab-dma-protocol.h",
+      "sha256": "9c3a3aec1e600401445311d2fdcc0f59ea2af964d13eea83cfa8575104e8b245",
+      "snapshot_path": "software/linux/overlay/arch/riscv/mm/rv64lab-dma-protocol.h"
+    },
+    {
+      "path": "software/linux/overlay/arch/riscv/mm/rv64lab-dma.c",
+      "sha256": "eb9c95f2552ec74e147abe194b7dc79bbfbed4132c2be5ab8fc731e700154a7f",
+      "snapshot_path": "software/linux/overlay/arch/riscv/mm/rv64lab-dma.c"
+    },
+    {
+      "path": "software/linux/overlay/arch/riscv/mm/rv64lab-dma-selftest.c",
+      "sha256": "33d27d943bd6fce37ed4e89339e6329f6639ef88502e689ff3726da81b5b2453",
+      "snapshot_path": "software/linux/overlay/arch/riscv/mm/rv64lab-dma-selftest.c"
+    },
+    {
+      "path": "software/linux/overlay/arch/riscv/mm/rv64lab-plic-selftest.c",
+      "sha256": "34e8678bbcc6530eea3ffd72ecb71eac0cf2600eb2e4970865de8788ec4219b5",
+      "snapshot_path": "software/linux/overlay/arch/riscv/mm/rv64lab-plic-selftest.c"
+    },
+    {
+      "path": "software/linux/overlay/arch/riscv/mm/rv64lab-scanout-probe.c",
+      "sha256": "39bbd51bb61071c6e1ed2220f2edad10be28ce2b834a15f3bd7b5da1ae6d9d62",
+      "snapshot_path": "software/linux/overlay/arch/riscv/mm/rv64lab-scanout-probe.c"
+    },
+    {
+      "path": "software/linux/overlay/arch/riscv/mm/r107-pattern.h",
+      "sha256": "87f3f1ef41019bfde7a5be7450a738b6200b2d51f3ec9739b704d87f7fd62dc4",
+      "snapshot_path": "software/linux/overlay/arch/riscv/mm/r107-pattern.h"
+    },
+    {
+      "path": "software/linux/overlay/drivers/gpu/drm/tiny/Kconfig",
+      "sha256": "7a9600bc14cb0e82c9acffcb87119ae7266bd465db6007318ae2c5da691013ec",
+      "snapshot_path": "software/linux/overlay/drivers/gpu/drm/tiny/Kconfig"
+    },
+    {
+      "path": "software/linux/overlay/drivers/gpu/drm/tiny/Makefile",
+      "sha256": "3be4b0826267896c50edf1dc39328a518c75381cbbf3a5ee1c8094ec0e07640f",
+      "snapshot_path": "software/linux/overlay/drivers/gpu/drm/tiny/Makefile"
+    },
+    {
+      "path": "software/linux/overlay/drivers/gpu/drm/tiny/rv64lab-drm.c",
+      "sha256": "c4c76151552c4260ab9d0038e2439ae6725a4e589fc4d6cb870ec373874387ca",
+      "snapshot_path": "software/linux/overlay/drivers/gpu/drm/tiny/rv64lab-drm.c"
+    },
+    {
+      "path": "software/opensbi/overlay/lib/utils/serial/cadence-uart.c",
+      "sha256": "e9d084bb9d4263b1725a44cd89a69b2fab12d612be86da1d23e69d239b9660b5",
+      "snapshot_path": "software/opensbi-board-source/lib/utils/serial/cadence-uart.c"
+    },
+    {
+      "path": "software/opensbi/r82.config",
+      "sha256": "204ac089baa516c25783e460994219b2e27a4c53d0f92e4aba9c98f22c163ae4",
+      "snapshot_path": "software/opensbi-board.config"
+    },
+    {
+      "path": "software/sources.lock.json",
+      "sha256": "f4266a6bac03d5029de983b4d9f23b528c8f5be89d409fd52cd2dd6825ec6f51",
+      "snapshot_path": "software/upstream/SOURCES.lock.json"
+    },
+    {
+      "path": "software/reference/linux/bootrom.S",
+      "sha256": "c540707d47788ee624fc0787eb32dc38c48d79ed2bcb6da8beb3fa0d84b67b65",
+      "snapshot_path": "wsl/sw/rv64/linux/bootrom.S"
+    },
+    {
+      "path": "software/reference/linux/busybox.config",
+      "sha256": "b0b8b616b6f84f4a98dc6e35dbb925b662f03a034fa455b7037a8e33780bd8e1",
+      "snapshot_path": "wsl/sw/rv64/linux/busybox.config"
+    },
+    {
+      "path": "software/reference/linux/inittab",
+      "sha256": "92376ed4b0e9c0d8577a250e77824773d9c14f6ca9a7c4651a0fe4db228ebe47",
+      "snapshot_path": "wsl/sw/rv64/linux/inittab"
+    },
+    {
+      "path": "software/reference/linux/libc_probe.c",
+      "sha256": "0d835d2f6881c84c8afead227202dc37210a6d5aa97db497a0ae49eabeba40d9",
+      "snapshot_path": "wsl/sw/rv64/linux/libc_probe.c"
+    },
+    {
+      "path": "software/reference/linux/linux-selftest.c",
+      "sha256": "35a448be0f5591b71e39c0e5d37baa12b238339f20ef029ad5cc300e6eb02c91",
+      "snapshot_path": "wsl/sw/rv64/linux/linux-selftest.c"
+    },
+    {
+      "path": "software/reference/linux/linux.config",
+      "sha256": "c8d122947f0947505a2c568f32f9f26a0dfe505aff63aa2b618189b7d68b39ca",
+      "snapshot_path": "wsl/sw/rv64/linux/linux.config"
+    },
+    {
+      "path": "software/reference/linux/musl-configure.mk",
+      "sha256": "3a080318977e05e241a2ed9b80f244ef0a5627f6464010b7536e82e546d8f617",
+      "snapshot_path": "wsl/sw/rv64/linux/musl-configure.mk"
+    },
+    {
+      "path": "software/reference/linux/platform.dts",
+      "sha256": "cfccd445d930dc84465f04468aa6a6501dc71c62c8b795360b1f1ceb42fd1b51",
+      "snapshot_path": "wsl/sw/rv64/linux/platform.dts"
+    },
+    {
+      "path": "software/reference/linux/rcS",
+      "sha256": "fb324b7a9acea69fdb51e8677a13b1c2f4e14554976f2b3e302c027fa2a3c17a",
+      "snapshot_path": "wsl/sw/rv64/linux/rcS"
+    },
+    {
+      "path": "software/reference/linux/sbi-probe-start.S",
+      "sha256": "9e08599e5e7225200b7e91ad4bcba8eb61c608b61d5e69b36226c3afcbddc364",
+      "snapshot_path": "wsl/sw/rv64/linux/sbi-probe-start.S"
+    },
+    {
+      "path": "software/reference/linux/sbi-probe.c",
+      "sha256": "8a8cb4afcb285d42274a9ee5c2f76a249f5fa414a340c3a03a1a1ed669dbe2e1",
+      "snapshot_path": "wsl/sw/rv64/linux/sbi-probe.c"
+    },
+    {
+      "path": "software/reference/linux/static-musl.specs.in",
+      "sha256": "15bc4597c232ad22af3bb8889273721ddf31cd814656de9a7b7ba994e897d3ef",
+      "snapshot_path": "wsl/sw/rv64/linux/static-musl.specs.in"
+    },
+    {
+      "path": "software/reference/r108-graphics-preparation/modetest-inventory.sh",
+      "sha256": "c8fa25d8043a79824274d3029e46dc0feef79bd1087a50b40aee9272133e43a8",
+      "snapshot_path": "wsl/sw/rv64/r108-graphics-preparation/modetest-inventory.sh"
+    },
+    {
+      "path": "software/reference/r108-graphics-preparation/xorg-prerequisites-candidate.config",
+      "sha256": "0d50ca5f3e553985ed310f9d6ebadb2cff067d82912b486f8511fe8ece32ba70",
+      "snapshot_path": "wsl/sw/rv64/r108-graphics-preparation/xorg-prerequisites-candidate.config"
+    },
+    {
+      "path": "software/reference/r108-linux-drm/drm-selftest-v2.c",
+      "sha256": "973143d689524a89140f09d3117b6f1f6c1bada1866f48d2a4a40e144951e6dd",
+      "snapshot_path": "wsl/sw/rv64/r108-linux-drm/drm-selftest-v2.c"
+    },
+    {
+      "path": "software/reference/r108-linux-drm/drm-selftest-v3.c",
+      "sha256": "aee1cc3031facedbeb47412bb0d73e414bd726cad479a887123c4dd12aabdec9",
+      "snapshot_path": "wsl/sw/rv64/r108-linux-drm/drm-selftest-v3.c"
+    },
+    {
+      "path": "software/reference/r108-linux-drm/drm-selftest-v4.c",
+      "sha256": "b28002b9d2b596a45b6ede0a3eeb110274fbc69ab8d0377ef329016b9497a706",
+      "snapshot_path": "wsl/sw/rv64/r108-linux-drm/drm-selftest-v4.c"
+    },
+    {
+      "path": "software/reference/r108-linux-drm/drm-selftest.c",
+      "sha256": "aad81c4590b14e30b33d013ce1d7bac404fbe32358a738d0f1e0e6f3868b7c54",
+      "snapshot_path": "wsl/sw/rv64/r108-linux-drm/drm-selftest.c"
+    },
+    {
+      "path": "software/reference/r108-linux-drm/rv64lab-drm.c",
+      "sha256": "c4c76151552c4260ab9d0038e2439ae6725a4e589fc4d6cb870ec373874387ca",
+      "snapshot_path": "wsl/sw/rv64/r108-linux-drm/rv64lab-drm.c"
+    },
+    {
+      "path": "software/reference/r109-graphics/modetest-synthetic-fixture.txt",
+      "sha256": "d12133104c02e963dfcde20301813392cb6316397b3f7c4266574410eb65ebb5",
+      "snapshot_path": "wsl/sw/rv64/r109-graphics/modetest-synthetic-fixture.txt"
+    },
+    {
+      "path": "software/reference/r109-graphics/x11-ipc-probe-v2.c",
+      "sha256": "7b67252f53e3855295c25e0a421cdf27a7d5b3dfd2e9615ac176f6fd9b412025",
+      "snapshot_path": "wsl/sw/rv64/r109-graphics/x11-ipc-probe-v2.c"
+    },
+    {
+      "path": "software/reference/r109-graphics/x11-ipc-probe.c",
+      "sha256": "c469a97998cdca7eee71c45fe5c512a4d355c9d0376419d935f1eeb8df01c60d",
+      "snapshot_path": "wsl/sw/rv64/r109-graphics/x11-ipc-probe.c"
+    },
+    {
+      "path": "software/reference/r115-desktop/README.md",
+      "sha256": "5ffe281fe8881bbd9567640624d29e027abc20e1aaafb884df9f2f36ee22d2c5",
+      "snapshot_path": "wsl/sw/rv64/r115-desktop/README.md"
+    },
+    {
+      "path": "software/reference/r115-desktop/desktop-session-r1.sh",
+      "sha256": "d573d20f242bd5dc5a1d09b72d8746f0c7a0aafa3cf0244fa76df1212f3ff310",
+      "snapshot_path": "wsl/sw/rv64/r115-desktop/desktop-session-r1.sh"
+    },
+    {
+      "path": "software/reference/r115-desktop/one-workspace-r1.py",
+      "sha256": "99230b1c99b6bc2621a48cb9993c024865263ad214f1293ed9e801bebfbd68d0",
+      "snapshot_path": "wsl/sw/rv64/r115-desktop/one-workspace-r1.py"
+    },
+    {
+      "path": "software/reference/r65-gc-linux/fp-context.c",
+      "sha256": "3ff194153db9038161d63ed6b3cc0ff7e0d73dfab8b89350332bcefd7a871f03",
+      "snapshot_path": "wsl/sw/rv64/r65-gc-linux/fp-context.c"
+    },
+    {
+      "path": "software/reference/r65-gc-linux/fp-registers.S",
+      "sha256": "0af7f200b031ec39db72b716ead4758a5454f4f1fec74f9d48a7a6ccf022d9e5",
+      "snapshot_path": "wsl/sw/rv64/r65-gc-linux/fp-registers.S"
+    },
+    {
+      "path": "software/reference/r65-gc-linux/init",
+      "sha256": "6b7687a2b9710410bb1e557642e67a9c1d53cc11022ab5cb56f4e4d0ed3247ea",
+      "snapshot_path": "wsl/sw/rv64/r65-gc-linux/init"
+    },
+    {
+      "path": "software/reference/r65-gc-linux/rcS",
+      "sha256": "f6404272b590cef9db671dc0cbd6f0ec5cbb59192867f744c738e3f687d855ab",
+      "snapshot_path": "wsl/sw/rv64/r65-gc-linux/rcS"
+    },
+    {
+      "path": "software/reference/r69-gc-tty/rcS",
+      "sha256": "99ba6d61c55b57ba0f942e361ba3d28fd92f8ba0c49d7a08f6d2b17ebfa33760",
+      "snapshot_path": "wsl/sw/rv64/r69-gc-tty/rcS"
+    },
+    {
+      "path": "software/reference/r69-gc-tty/tty-drain.c",
+      "sha256": "72bca2c7fdfaea9de7e81aacb62982ac6e071c2fcb482395317c404e9da233a5",
+      "snapshot_path": "wsl/sw/rv64/r69-gc-tty/tty-drain.c"
+    },
+    {
+      "path": "software/reference/r72-debian-hvc-r3/inittab",
+      "sha256": "22270109a503357596daf43d2a3f1899bd9a6095d9c758ba7cf35a8295fa0683",
+      "snapshot_path": "wsl/sw/rv64/r72-debian-hvc-r3/inittab"
+    },
+    {
+      "path": "software/reference/r72-debian-hvc-r3/rcS",
+      "sha256": "4a16e145d4ee6a89807eb6b6ea1d368691728128c13e109ec3bf46f88e2efca4",
+      "snapshot_path": "wsl/sw/rv64/r72-debian-hvc-r3/rcS"
+    },
+    {
+      "path": "reference/build-scripts/build_artifact_guard.py",
+      "sha256": "2aef5bd28bc23efadba1c3ccfa70a9e911162eafe5617f57de5d4f997271e5a0",
+      "snapshot_path": "wsl/scripts/rv64/build_artifact_guard.py"
+    },
+    {
+      "path": "reference/build-scripts/build_artifact_guard_v2.py",
+      "sha256": "dc2ebabade4b9aaeaeb3d8ef927eb44951c24fd9e812d466d9c5972185be6f2c",
+      "snapshot_path": "wsl/scripts/rv64/build_artifact_guard_v2.py"
+    },
+    {
+      "path": "reference/build-scripts/integer_core_check.py",
+      "sha256": "d56311253eef9bd2c44ab40a572f279c99bbd27aaadd58a10e5a586a46f7b061",
+      "snapshot_path": "wsl/scripts/rv64/integer_core_check.py"
+    },
+    {
+      "path": "reference/build-scripts/linux_platform.py",
+      "sha256": "ac148d65cf18615927d4b9608290a06e78da56558010dfa86ea9ec904f60e3ee",
+      "snapshot_path": "wsl/scripts/rv64/linux_platform.py"
+    },
+    {
+      "path": "reference/build-scripts/r107_scanout_dt_prepare_v1.py",
+      "sha256": "bd2ef484ad5f3ff884de7c63c34dff42deafce6e5016671d0c85b12a48404c52",
+      "snapshot_path": "wsl/scripts/rv64/r107_scanout_dt_prepare_v1.py"
+    },
+    {
+      "path": "reference/build-scripts/r107_scanout_kernel_prepare_v1.py",
+      "sha256": "5993aeed4c2405aa8d560f895ae17be484d36f197736f1fb19bece307211c00f",
+      "snapshot_path": "wsl/scripts/rv64/r107_scanout_kernel_prepare_v1.py"
+    },
+    {
+      "path": "reference/build-scripts/r108_drm_dt_prepare_v1.py",
+      "sha256": "966a8e554b7936d5c0a34046c582f75615685d1f9b1725dcb712d81782ce684e",
+      "snapshot_path": "wsl/scripts/rv64/r108_drm_dt_prepare_v1.py"
+    },
+    {
+      "path": "reference/build-scripts/r108_drm_kernel_prepare_v5.py",
+      "sha256": "ad6ee6b5a9d3de2b00d9ce8def489dfa4f3b3124f1e4945358967b676b7d8b24",
+      "snapshot_path": "wsl/scripts/rv64/r108_drm_kernel_prepare_v5.py"
+    },
+    {
+      "path": "reference/build-scripts/r108_drm_userspace_prepare_v5.py",
+      "sha256": "c2d18793b06b83f0a0d50e099260b0e5f617c8e084a75118093d3eea11152fa6",
+      "snapshot_path": "wsl/scripts/rv64/r108_drm_userspace_prepare_v5.py"
+    },
+    {
+      "path": "reference/build-scripts/r108_graphics_dependency_prepare_v2.py",
+      "sha256": "8c08f7db3554f829e6ad5f469bb31fa746654ece158bd0d339ff1a52664ac112",
+      "snapshot_path": "wsl/scripts/rv64/r108_graphics_dependency_prepare_v2.py"
+    },
+    {
+      "path": "reference/build-scripts/r109_graphics_kernel_prepare_v1.py",
+      "sha256": "905c018863ef51c439875006080fcc9349f02d4106fd089f3cdf0edb50c3a766",
+      "snapshot_path": "wsl/scripts/rv64/r109_graphics_kernel_prepare_v1.py"
+    },
+    {
+      "path": "reference/build-scripts/r109_graphics_userspace_prepare_v2.py",
+      "sha256": "6b8fe56942eb8375f5934938c7874c825938b6f4369f1d7d35590b062684aaa7",
+      "snapshot_path": "wsl/scripts/rv64/r109_graphics_userspace_prepare_v2.py"
+    },
+    {
+      "path": "reference/build-scripts/r110_desktop_package_prepare_v2.py",
+      "sha256": "c00e9fa93b5030027fc6074152b16e8c969b8fc3f6201113409842b94dc42cdb",
+      "snapshot_path": "wsl/scripts/rv64/r110_desktop_package_prepare_v2.py"
+    },
+    {
+      "path": "reference/build-scripts/r111_desktop_payload_prepare_v4.py",
+      "sha256": "0873ec1015682642c5d01c8f7e0160ff3367e5f826cc4f4f99792cb6cbedcd85",
+      "snapshot_path": "wsl/scripts/rv64/r111_desktop_payload_prepare_v4.py"
+    },
+    {
+      "path": "reference/build-scripts/r111_storage_fixture_prepare_v1.py",
+      "sha256": "5ff118ab1ef73f73da79181c645acb944200dafde2c54d90271d3c73afa0fb28",
+      "snapshot_path": "wsl/scripts/rv64/r111_storage_fixture_prepare_v1.py"
+    },
+    {
+      "path": "reference/build-scripts/r111_storage_kernel_prepare_v2.py",
+      "sha256": "5d8b3a30807dde613bf11690922d9ff2029c38d95d6786edf209604e0a16f3a0",
+      "snapshot_path": "wsl/scripts/rv64/r111_storage_kernel_prepare_v2.py"
+    },
+    {
+      "path": "reference/build-scripts/r54_linux_board_prepare.py",
+      "sha256": "ec9dc18f6d33ffef1192e0b7d08554f074c30f11df09e5c48d836810203e14df",
+      "snapshot_path": "wsl/scripts/rv64/r54_linux_board_prepare.py"
+    },
+    {
+      "path": "reference/build-scripts/r60_debian_package_prepare.py",
+      "sha256": "c2524d609eb36022136e0743613a4d2a4f605d90ed04df41936913bf273c197b",
+      "snapshot_path": "wsl/scripts/rv64/r60_debian_package_prepare.py"
+    },
+    {
+      "path": "reference/build-scripts/r65_gc_linux_prepare.py",
+      "sha256": "47dc16bb85a6fdfd0801f372707df120b67f0192d5df9591a78d556cad7c441d",
+      "snapshot_path": "wsl/scripts/rv64/r65_gc_linux_prepare.py"
+    },
+    {
+      "path": "reference/build-scripts/r69_gc_tty_prepare.py",
+      "sha256": "9a9cb6264b49bdd477654fdf9bf1b39d5ebf141e0bbbb511f5f0e5986cc57bcf",
+      "snapshot_path": "wsl/scripts/rv64/r69_gc_tty_prepare.py"
+    },
+    {
+      "path": "reference/build-scripts/r72_debian_hvc_kernel_prepare_v5.py",
+      "sha256": "9b67b0b4e1e68141830a4d88a09131d3ffcba8cd96ec7b82509322551d3c2927",
+      "snapshot_path": "wsl/scripts/rv64/r72_debian_hvc_kernel_prepare_v5.py"
+    },
+    {
+      "path": "reference/build-scripts/r75_board_firmware_prepare_v2.py",
+      "sha256": "56e3ba2205fa33e95bbae6f8c1e95794f13c8ba0750fcc36515d86cc2a3497bf",
+      "snapshot_path": "wsl/scripts/rv64/r75_board_firmware_prepare_v2.py"
+    },
+    {
+      "path": "reference/build-scripts/r82_board_firmware_prepare_r1.py",
+      "sha256": "dc9331a3411c6884dc74adbb339731de41f6db533498048831fff4200b9eea3c",
+      "snapshot_path": "wsl/scripts/rv64/r82_board_firmware_prepare_r1.py"
+    },
+    {
+      "path": "reference/build-scripts/r88_linux_dma_prepare_v2.py",
+      "sha256": "184f655a6e6be2b11499911fd962d6dcfb1f1d78ebb9e92969193bd684f1e5c8",
+      "snapshot_path": "wsl/scripts/rv64/r88_linux_dma_prepare_v2.py"
+    },
+    {
+      "path": "reference/build-scripts/r93_plic_kernel_prepare_v1.py",
+      "sha256": "53625abba7b0d8b8e908c2f62c3b714f26ff96727162238a5bd709ce58352436",
+      "snapshot_path": "wsl/scripts/rv64/r93_plic_kernel_prepare_v1.py"
+    },
+    {
+      "path": "reference/build-scripts/r93_usb_dt_prepare_v1.py",
+      "sha256": "4e6742420c7c8e506a5355f93b4d25dd517a88528e2e94d22695ed9662208ceb",
+      "snapshot_path": "wsl/scripts/rv64/r93_usb_dt_prepare_v1.py"
+    },
+    {
+      "path": "reference/build-scripts/r93_usb_image_prepare_v1.py",
+      "sha256": "eb8fba1b449c288eef22bef0a97eb9fa055c78d791284fa16e1d82356e9c485c",
+      "snapshot_path": "wsl/scripts/rv64/r93_usb_image_prepare_v1.py"
+    },
+    {
+      "path": "reference/sw/rv64/r109-graphics/x11-ipc-probe-v2.c",
+      "sha256": "7b67252f53e3855295c25e0a421cdf27a7d5b3dfd2e9615ac176f6fd9b412025",
+      "snapshot_path": "wsl/sw/rv64/r109-graphics/x11-ipc-probe-v2.c"
+    },
+    {
+      "path": "reference/sw/rv64/r108-graphics-preparation/modetest-inventory.sh",
+      "sha256": "c8fa25d8043a79824274d3029e46dc0feef79bd1087a50b40aee9272133e43a8",
+      "snapshot_path": "wsl/sw/rv64/r108-graphics-preparation/modetest-inventory.sh"
+    },
+    {
+      "path": "reference/sw/rv64/r72-debian-hvc-r3/inittab",
+      "sha256": "22270109a503357596daf43d2a3f1899bd9a6095d9c758ba7cf35a8295fa0683",
+      "snapshot_path": "wsl/sw/rv64/r72-debian-hvc-r3/inittab"
+    },
+    {
+      "path": "reference/sw/rv64/r108-linux-drm/drm-selftest-v4.c",
+      "sha256": "b28002b9d2b596a45b6ede0a3eeb110274fbc69ab8d0377ef329016b9497a706",
+      "snapshot_path": "wsl/sw/rv64/r108-linux-drm/drm-selftest-v4.c"
+    },
+    {
+      "path": "reference/sw/rv64/r107-linux-scanout/pattern.h",
+      "sha256": "87f3f1ef41019bfde7a5be7450a738b6200b2d51f3ec9739b704d87f7fd62dc4",
+      "snapshot_path": "wsl/sw/rv64/r107-linux-scanout/pattern.h"
+    },
+    {
+      "path": "reference/sw/rv64/r72-debian-hvc-r3/rcS",
+      "sha256": "4a16e145d4ee6a89807eb6b6ea1d368691728128c13e109ec3bf46f88e2efca4",
+      "snapshot_path": "wsl/sw/rv64/r72-debian-hvc-r3/rcS"
+    },
+    {
+      "path": "reference/initramfs-r109-rcS",
+      "sha256": "0a788a2067b87ef81c0c6284ef68dca9563bcd08c2ca9fedc5bf8e63d2b283d3",
+      "snapshot_path": "software/fixed-inputs/r109-graphics-userspace-r2/rcS"
+    },
+    {
+      "path": "software/desktop/rootfs/usr/local/libexec/rv64-modetest-inventory",
+      "sha256": "c8fa25d8043a79824274d3029e46dc0feef79bd1087a50b40aee9272133e43a8",
+      "snapshot_path": "software/desktop-local-files/usr/local/libexec/rv64-modetest-inventory"
+    },
+    {
+      "path": "software/desktop/rootfs/usr/local/libexec/rv64-openbox-session",
+      "sha256": "555ce08636d161526d6602c67770b2555c0f4f4cb5145c6c2e90fb57cf5186cf",
+      "snapshot_path": "software/desktop-local-files/usr/local/libexec/rv64-openbox-session"
+    },
+    {
+      "path": "software/desktop/rootfs/usr/local/sbin/rv64-desktop-session",
+      "sha256": "29a425943bca343421ec8d5089c5f5cd783665b953a77125b1efcc518e8568a5",
+      "snapshot_path": "software/desktop-local-files/usr/local/sbin/rv64-desktop-session"
+    },
+    {
+      "path": "software/desktop/desktop-session.sh",
+      "sha256": "d573d20f242bd5dc5a1d09b72d8746f0c7a0aafa3cf0244fa76df1212f3ff310",
+      "snapshot_path": "wsl/sw/rv64/r115-desktop/desktop-session-r1.sh"
+    },
+    {
+      "path": "tests/reference/r95_video_timing_test.cpp",
+      "sha256": "7d194b85b207b127b7182eed28567efe1a69d79e5e3814ecc4b53199c17423b3",
+      "snapshot_path": "wsl/sim/rv64/r95_video_timing_test.cpp"
+    }
+  ],
+  "omitted_historical_gate_recipes": [
+    "reference/build-scripts/r103_control_check_v1.py",
+    "reference/build-scripts/r103_control_check_v10.py",
+    "reference/build-scripts/r103_control_check_v2.py",
+    "reference/build-scripts/r103_control_check_v3.py",
+    "reference/build-scripts/r103_control_check_v4.py",
+    "reference/build-scripts/r103_control_check_v5.py",
+    "reference/build-scripts/r103_control_check_v6.py",
+    "reference/build-scripts/r103_control_check_v7.py",
+    "reference/build-scripts/r103_control_check_v8.py",
+    "reference/build-scripts/r103_control_check_v9.py",
+    "reference/build-scripts/r103_control_induct_probe_v1.py",
+    "reference/build-scripts/r103_control_induct_probe_v2.py",
+    "reference/build-scripts/r103_control_induct_probe_v3.py",
+    "reference/build-scripts/r103_control_induct_probe_v4.py",
+    "reference/build-scripts/r103_control_induct_probe_v5.py",
+    "reference/build-scripts/r103_control_induct_probe_v6.py",
+    "reference/build-scripts/r103_control_native_v1.py",
+    "reference/build-scripts/r103_stop_superseded_proof_v1.py",
+    "reference/build-scripts/r107_pattern_check_v1.py",
+    "reference/build-scripts/r107_record_linux_display_witness_v1.py",
+    "reference/build-scripts/r107_scanout_linux_check_v1.py",
+    "reference/build-scripts/r107_scanout_linux_check_v2.py",
+    "reference/build-scripts/r108_console_reference_prepare_v1.py",
+    "reference/build-scripts/r108_console_reference_prepare_v2.py",
+    "reference/build-scripts/r108_console_reference_prepare_v3.py",
+    "reference/build-scripts/r108_console_reference_prepare_v4.py",
+    "reference/build-scripts/r108_drm_errno_oracle_check_v1.py",
+    "reference/build-scripts/r108_drm_errno_recovery_v1.py",
+    "reference/build-scripts/r108_drm_errno_recovery_v2.py",
+    "reference/build-scripts/r108_drm_host_generate_v1.py",
+    "reference/build-scripts/r108_drm_kernel_prepare_v1.py",
+    "reference/build-scripts/r108_drm_kernel_prepare_v2.py",
+    "reference/build-scripts/r108_drm_kernel_prepare_v3.py",
+    "reference/build-scripts/r108_drm_kernel_prepare_v4.py",
+    "reference/build-scripts/r108_drm_linux_check_v1.py",
+    "reference/build-scripts/r108_drm_linux_check_v2.py",
+    "reference/build-scripts/r108_drm_linux_check_v3.py",
+    "reference/build-scripts/r108_drm_recovery_prepare_v1.py",
+    "reference/build-scripts/r108_drm_userspace_prepare_v1.py",
+    "reference/build-scripts/r108_drm_userspace_prepare_v2.py",
+    "reference/build-scripts/r108_drm_userspace_prepare_v3.py",
+    "reference/build-scripts/r108_drm_userspace_prepare_v4.py",
+    "reference/build-scripts/r108_freeze_addfb2_failures_v1.py",
+    "reference/build-scripts/r108_freeze_preparation_v1.py",
+    "reference/build-scripts/r108_freeze_recovery_preparation_v1.py",
+    "reference/build-scripts/r108_graphics_dependency_prepare_v1.py",
+    "reference/build-scripts/r108_intermediate_cleanup_v1.py",
+    "reference/build-scripts/r108_intermediate_cleanup_v2.py",
+    "reference/build-scripts/r108_xorg_config_audit_v1.py",
+    "reference/build-scripts/r108_xorg_config_audit_v2.py",
+    "reference/build-scripts/r109_console_reference_prepare_v1.py",
+    "reference/build-scripts/r109_freeze_preparation_v1.py",
+    "reference/build-scripts/r109_graphics_linux_check_v1.py",
+    "reference/build-scripts/r109_graphics_userspace_prepare_v1.py",
+    "reference/build-scripts/r109_physical_graphics_oracle_prepare_v1.py",
+    "reference/build-scripts/r110_desktop_package_prepare_v1.py",
+    "reference/build-scripts/r110_desktop_platform_audit_v1.py",
+    "reference/build-scripts/r110_desktop_platform_audit_v2.py",
+    "reference/build-scripts/r111_console_reference_prepare_v1.py",
+    "reference/build-scripts/r111_desktop_payload_prepare_v1.py",
+    "reference/build-scripts/r111_desktop_payload_prepare_v2.py",
+    "reference/build-scripts/r111_desktop_payload_prepare_v3.py",
+    "reference/build-scripts/r111_desktop_payload_recovery_v1.py",
+    "reference/build-scripts/r111_failed_payload_cleanup_v1.py",
+    "reference/build-scripts/r111_preparation_checkpoint_v1.py",
+    "reference/build-scripts/r111_storage_kernel_prepare_v1.py",
+    "reference/build-scripts/r111_storage_linux_check_v1.py",
+    "reference/build-scripts/r54_linux_boot_check.py",
+    "reference/build-scripts/r58_lp64d_reference_check.py",
+    "reference/build-scripts/r63_calign_check.py",
+    "reference/build-scripts/r63_calign_formal.py",
+    "reference/build-scripts/r63_calign_vm_check.py",
+    "reference/build-scripts/r64_fp_integration_formal.py",
+    "reference/build-scripts/r64_fp_precise_check.py",
+    "reference/build-scripts/r64_gc_abi_check.py",
+    "reference/build-scripts/r64_gc_negatives.py",
+    "reference/build-scripts/r65_gc_linux_boot_check.py",
+    "reference/build-scripts/r65_gc_linux_random_check.py",
+    "reference/build-scripts/r65_gc_model_build.py",
+    "reference/build-scripts/r65_gc_sbi_check.py",
+    "reference/build-scripts/r69_gc_linux_boot_check.py",
+    "reference/build-scripts/r72_debian_hvc_kernel_prepare.py",
+    "reference/build-scripts/r72_debian_hvc_kernel_prepare_v2.py",
+    "reference/build-scripts/r72_debian_hvc_kernel_prepare_v3.py",
+    "reference/build-scripts/r72_debian_hvc_kernel_prepare_v4.py",
+    "reference/build-scripts/r72_debian_hvc_linux_check.py",
+    "reference/build-scripts/r72_debian_hvc_linux_check_v2.py",
+    "reference/build-scripts/r72_debian_hvc_linux_check_v3.py",
+    "reference/build-scripts/r72_debian_hvc_linux_check_v5.py",
+    "reference/build-scripts/r72_debian_hvc_linux_check_v6.py",
+    "reference/build-scripts/r72_debian_hvc_linux_check_v7.py",
+    "reference/build-scripts/r72_debian_hvc_model_build.py",
+    "reference/build-scripts/r72_debian_hvc_model_relink_v2.py",
+    "reference/build-scripts/r72_debian_hvc_model_relink_v3.py",
+    "reference/build-scripts/r72_debian_hvc_model_relink_v4.py",
+    "reference/build-scripts/r72_debian_hvc_model_relink_v5.py",
+    "reference/build-scripts/r72_hvc_diagnose.py",
+    "reference/build-scripts/r72_hvc_diagnose_v2.py",
+    "reference/build-scripts/r75_board_firmware_prepare.py",
+    "reference/build-scripts/r75_cadence_check.py",
+    "reference/build-scripts/r80_board_system_check.py",
+    "reference/build-scripts/r80_board_system_check_v2.py",
+    "reference/build-scripts/r80_board_system_check_v3.py",
+    "reference/build-scripts/r80_board_system_check_v4.py",
+    "reference/build-scripts/r80_board_system_formal.py",
+    "reference/build-scripts/r82_sbi_probe_prepare_r1.py",
+    "reference/build-scripts/r82_sbi_probe_prepare_r2.py",
+    "reference/build-scripts/r82_sbi_probe_prepare_r3.py",
+    "reference/build-scripts/r82_sbi_probe_prepare_r4.py",
+    "reference/build-scripts/r88_dma_protocol_check_v1.py",
+    "reference/build-scripts/r88_linux_dma_check_v1.py",
+    "reference/build-scripts/r88_linux_dma_check_v2.py",
+    "reference/build-scripts/r88_linux_dma_prepare_v1.py",
+    "reference/build-scripts/r93_plic_linux_check_v1.py",
+    "reference/build-scripts/r93_plic_linux_check_v2.py",
+    "reference/build-scripts/r93_plic_system_check_v1.py",
+    "reference/build-scripts/r93_plic_system_check_v2.py",
+    "reference/build-scripts/r93_plic_system_check_v3.py",
+    "reference/build-scripts/r93_plic_system_formal_v1.py",
+    "reference/build-scripts/r93_plic_system_formal_v2.py",
+    "reference/build-scripts/r93_plic_system_prepare_v1.py",
+    "reference/build-scripts/r93_usb_phy_compile_v1.py"
+  ]
+}

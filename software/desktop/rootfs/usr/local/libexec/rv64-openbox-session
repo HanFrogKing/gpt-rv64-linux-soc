@@ -1,0 +1,5 @@
+#!/bin/busybox sh
+set -eu
+/usr/bin/xsetroot -solid '#203040'
+/usr/bin/xterm -geometry 80x24+8+8 -title 'Self-designed RV64 Debian' &
+exec /usr/bin/openbox --sm-disable

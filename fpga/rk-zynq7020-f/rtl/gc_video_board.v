@@ -1,0 +1,333 @@
+// R106 Windows-only board integration candidate. Not accepted or deployed.
+// R94 Windows board candidate: frozen R93 system plus two-flop USB IRQ CDC.
+module gc_video_board (
+ (* X_INTERFACE_INFO="xilinx.com:signal:clock:1.0 clk CLK", X_INTERFACE_PARAMETER="XIL_INTERFACENAME clk, FREQ_HZ 50000000, ASSOCIATED_BUSIF DDR_AXI:PS_AXI:SCAN_AXI, ASSOCIATED_RESET resetn" *) input wire clk,
+ (* X_INTERFACE_INFO="xilinx.com:signal:reset:1.0 resetn RST", X_INTERFACE_PARAMETER="XIL_INTERFACENAME resetn, POLARITY ACTIVE_LOW" *) input wire resetn,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI ARVALID", X_INTERFACE_PARAMETER="XIL_INTERFACENAME DDR_AXI, PROTOCOL AXI4, DATA_WIDTH 64, ADDR_WIDTH 32, ID_WIDTH 1, FREQ_HZ 50000000, HAS_BURST 1, HAS_LOCK 1, HAS_CACHE 1, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 256" *) output wire [0:0] ddr_axi_arvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI ARID" *) output wire [0:0] ddr_axi_arid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI ARADDR" *) output wire [31:0] ddr_axi_araddr,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI ARLEN" *) output wire [7:0] ddr_axi_arlen,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI ARSIZE" *) output wire [2:0] ddr_axi_arsize,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI ARPROT" *) output wire [2:0] ddr_axi_arprot,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI ARBURST" *) output wire [1:0] ddr_axi_arburst,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI ARLOCK" *) output wire ddr_axi_arlock,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI ARCACHE" *) output wire [3:0] ddr_axi_arcache,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI RREADY" *) output wire ddr_axi_rready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI AWVALID" *) output wire [0:0] ddr_axi_awvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI AWID" *) output wire [0:0] ddr_axi_awid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI AWADDR" *) output wire [31:0] ddr_axi_awaddr,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI AWLEN" *) output wire [7:0] ddr_axi_awlen,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI AWSIZE" *) output wire [2:0] ddr_axi_awsize,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI AWPROT" *) output wire [2:0] ddr_axi_awprot,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI AWBURST" *) output wire [1:0] ddr_axi_awburst,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI AWLOCK" *) output wire ddr_axi_awlock,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI AWCACHE" *) output wire [3:0] ddr_axi_awcache,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI WVALID" *) output wire [0:0] ddr_axi_wvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI WDATA" *) output wire [63:0] ddr_axi_wdata,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI WSTRB" *) output wire [7:0] ddr_axi_wstrb,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI WLAST" *) output wire ddr_axi_wlast,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI BREADY" *) output wire ddr_axi_bready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI ARREADY" *) input wire ddr_axi_arready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI RVALID" *) input wire [0:0] ddr_axi_rvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI RID" *) input wire [0:0] ddr_axi_rid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI RLAST" *) input wire ddr_axi_rlast,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI RDATA" *) input wire [63:0] ddr_axi_rdata,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI RRESP" *) input wire [1:0] ddr_axi_rresp,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI AWREADY" *) input wire ddr_axi_awready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI WREADY" *) input wire ddr_axi_wready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI BVALID" *) input wire [0:0] ddr_axi_bvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI BID" *) input wire [0:0] ddr_axi_bid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 DDR_AXI BRESP" *) input wire [1:0] ddr_axi_bresp,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI ARVALID", X_INTERFACE_PARAMETER="XIL_INTERFACENAME PS_AXI, PROTOCOL AXI4, DATA_WIDTH 64, ADDR_WIDTH 32, ID_WIDTH 1, FREQ_HZ 50000000, HAS_BURST 1, HAS_LOCK 1, HAS_CACHE 1, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 256" *) output wire [0:0] ps_axi_arvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI ARID" *) output wire [0:0] ps_axi_arid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI ARADDR" *) output wire [31:0] ps_axi_araddr,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI ARLEN" *) output wire [7:0] ps_axi_arlen,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI ARSIZE" *) output wire [2:0] ps_axi_arsize,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI ARPROT" *) output wire [2:0] ps_axi_arprot,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI ARBURST" *) output wire [1:0] ps_axi_arburst,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI ARLOCK" *) output wire ps_axi_arlock,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI ARCACHE" *) output wire [3:0] ps_axi_arcache,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI RREADY" *) output wire ps_axi_rready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI AWVALID" *) output wire [0:0] ps_axi_awvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI AWID" *) output wire [0:0] ps_axi_awid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI AWADDR" *) output wire [31:0] ps_axi_awaddr,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI AWLEN" *) output wire [7:0] ps_axi_awlen,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI AWSIZE" *) output wire [2:0] ps_axi_awsize,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI AWPROT" *) output wire [2:0] ps_axi_awprot,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI AWBURST" *) output wire [1:0] ps_axi_awburst,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI AWLOCK" *) output wire ps_axi_awlock,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI AWCACHE" *) output wire [3:0] ps_axi_awcache,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI WVALID" *) output wire [0:0] ps_axi_wvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI WDATA" *) output wire [63:0] ps_axi_wdata,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI WSTRB" *) output wire [7:0] ps_axi_wstrb,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI WLAST" *) output wire ps_axi_wlast,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI BREADY" *) output wire ps_axi_bready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI ARREADY" *) input wire ps_axi_arready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI RVALID" *) input wire [0:0] ps_axi_rvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI RID" *) input wire [0:0] ps_axi_rid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI RLAST" *) input wire ps_axi_rlast,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI RDATA" *) input wire [63:0] ps_axi_rdata,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI RRESP" *) input wire [1:0] ps_axi_rresp,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI AWREADY" *) input wire ps_axi_awready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI WREADY" *) input wire ps_axi_wready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI BVALID" *) input wire [0:0] ps_axi_bvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI BID" *) input wire [0:0] ps_axi_bid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 PS_AXI BRESP" *) input wire [1:0] ps_axi_bresp,
+ (* X_INTERFACE_INFO="xilinx.com:signal:interrupt:1.0 usb_irq_i INTERRUPT", X_INTERFACE_PARAMETER="XIL_INTERFACENAME usb_irq_i, SENSITIVITY LEVEL_HIGH" *) input wire usb_irq_i,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI ARVALID", X_INTERFACE_PARAMETER="XIL_INTERFACENAME SCAN_AXI, PROTOCOL AXI4, DATA_WIDTH 64, ADDR_WIDTH 32, ID_WIDTH 1, FREQ_HZ 50000000, HAS_BURST 1, HAS_LOCK 1, HAS_CACHE 1, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 256" *) output wire [0:0] scan_axi_arvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI ARID" *) output wire [0:0] scan_axi_arid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI ARADDR" *) output wire [31:0] scan_axi_araddr,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI ARLEN" *) output wire [7:0] scan_axi_arlen,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI ARSIZE" *) output wire [2:0] scan_axi_arsize,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI ARPROT" *) output wire [2:0] scan_axi_arprot,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI ARBURST" *) output wire [1:0] scan_axi_arburst,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI ARLOCK" *) output wire scan_axi_arlock,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI ARCACHE" *) output wire [3:0] scan_axi_arcache,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI RREADY" *) output wire scan_axi_rready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI AWVALID" *) output wire [0:0] scan_axi_awvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI AWID" *) output wire [0:0] scan_axi_awid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI AWADDR" *) output wire [31:0] scan_axi_awaddr,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI AWLEN" *) output wire [7:0] scan_axi_awlen,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI AWSIZE" *) output wire [2:0] scan_axi_awsize,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI AWPROT" *) output wire [2:0] scan_axi_awprot,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI AWBURST" *) output wire [1:0] scan_axi_awburst,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI AWLOCK" *) output wire scan_axi_awlock,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI AWCACHE" *) output wire [3:0] scan_axi_awcache,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI WVALID" *) output wire [0:0] scan_axi_wvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI WDATA" *) output wire [63:0] scan_axi_wdata,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI WSTRB" *) output wire [7:0] scan_axi_wstrb,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI WLAST" *) output wire scan_axi_wlast,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI BREADY" *) output wire scan_axi_bready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI ARREADY" *) input wire scan_axi_arready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI RVALID" *) input wire [0:0] scan_axi_rvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI RID" *) input wire [0:0] scan_axi_rid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI RLAST" *) input wire scan_axi_rlast,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI RDATA" *) input wire [63:0] scan_axi_rdata,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI RRESP" *) input wire [1:0] scan_axi_rresp,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI AWREADY" *) input wire scan_axi_awready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI WREADY" *) input wire scan_axi_wready,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI BVALID" *) input wire [0:0] scan_axi_bvalid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI BID" *) input wire [0:0] scan_axi_bid,
+ (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 SCAN_AXI BRESP" *) input wire [1:0] scan_axi_bresp,
+ input wire clock_resetn,
+ input wire commit_enable,
+ input wire hpd_i,
+ output wire clocks_locked_o,
+ (* X_INTERFACE_INFO="xilinx.com:signal:clock:1.0 pixel_clk_o CLK", X_INTERFACE_PARAMETER="XIL_INTERFACENAME pixel_clk_o, FREQ_HZ 40000000" *) output wire pixel_clk_o,
+ output wire [3:0] tmds_p_o,tmds_n_o,
+ output wire [31:0] scan_status_o,scan_bursts_o,scan_beats_o,scan_frames_o,scan_failed_o,
+ output wire [31:0] video_status_o,video_crc_o,video_good_o,video_bad_o,video_underflow_o,video_marker_o,video_dropped_o,video_pixels_o,
+ output wire [10:0] video_hpos_o,
+ output wire [9:0] video_vpos_o,
+ output wire [31:0] status,
+ output wire [63:0] commit_pc,
+ output wire [63:0] commit_cause,
+ output wire [63:0] time_value,
+ output wire [31:0] fence_complete,
+ output wire [31:0] icache_miss,
+ output wire [31:0] dcache_miss,
+ output wire [31:0] dcache_writeback
+);
+
+// The clock hardware runs through common CPU/fabric reset and commit pause.
+// LOCKED is an input to external proc_sys_reset; resetn must remain asserted
+// until locked and must be deasserted synchronously to the 50MHz bus.
+wire fb_raw,fb,pixel_raw,serial_raw,pixel,serial,locked;
+MMCME2_BASE #(.BANDWIDTH("OPTIMIZED"),.CLKIN1_PERIOD(20.0),
+ .DIVCLK_DIVIDE(1),.CLKFBOUT_MULT_F(20.0),.CLKFBOUT_PHASE(0.0),
+ .CLKOUT0_DIVIDE_F(25.0),.CLKOUT0_PHASE(0.0),.CLKOUT0_DUTY_CYCLE(0.5),
+ .CLKOUT1_DIVIDE(5),.CLKOUT1_PHASE(0.0),.CLKOUT1_DUTY_CYCLE(0.5),
+ .STARTUP_WAIT("FALSE")) video_mmcm (
+ .CLKIN1(clk),.RST(~clock_resetn),.PWRDWN(1'b0),.CLKFBIN(fb),
+ .CLKFBOUT(fb_raw),.CLKFBOUTB(),.CLKOUT0(pixel_raw),.CLKOUT0B(),
+ .CLKOUT1(serial_raw),.CLKOUT1B(),.CLKOUT2(),.CLKOUT2B(),
+ .CLKOUT3(),.CLKOUT3B(),.CLKOUT4(),.CLKOUT5(),.CLKOUT6(),.LOCKED(locked));
+BUFG fb_buffer(.I(fb_raw),.O(fb));
+BUFG pixel_buffer(.I(pixel_raw),.O(pixel));
+BUFG serial_buffer(.I(serial_raw),.O(serial));
+assign clocks_locked_o=locked;
+assign pixel_clk_o=pixel;
+(* ASYNC_REG="TRUE", SHREG_EXTRACT="NO" *) reg [2:0] serializer_release_q;
+always @(posedge pixel or negedge resetn) begin
+ if(!resetn)serializer_release_q<=3'b000;
+ else serializer_release_q<={serializer_release_q[1:0],1'b1};
+end
+wire serializer_resetn=serializer_release_q[2];
+(* ASYNC_REG="TRUE", SHREG_EXTRACT="NO" *) reg [1:0] hpd_q;
+always @(posedge pixel or negedge serializer_resetn)begin
+ if(!serializer_resetn)hpd_q<=2'b00;
+ else hpd_q<={hpd_q[0],hpd_i};
+end
+wire video_de,video_hs,video_vs,video_fs;
+wire [9:0] blue_word,green_word,red_word;
+wire reader_busy,queued_done,queued_success,ctrl_run,ctrl_locked,snap_busy,snap_valid;
+wire [4:0] reader_error;
+assign scan_status_o={16'h1060,4'd0,reader_error,reader_busy,queued_done,queued_success,ctrl_run,ctrl_locked,snap_busy,snap_valid};
+assign video_status_o={16'h1060,10'd0,hpd_q[1],serializer_resetn,video_de,video_hs,video_vs,video_fs};
+// Full AXI metadata is retained at the BD boundary; its write channel is idle.
+assign scan_axi_awvalid=1'b0;
+assign scan_axi_awid=1'b0;
+assign scan_axi_awaddr=32'b0;
+assign scan_axi_awlen=8'b0;
+assign scan_axi_awsize=3'd3;
+assign scan_axi_awprot=3'd0;
+assign scan_axi_awburst=2'd1;
+assign scan_axi_awlock=1'b0;
+assign scan_axi_awcache=4'd3;
+assign scan_axi_wvalid=1'b0;
+assign scan_axi_wdata=64'b0;
+assign scan_axi_wstrb=8'b0;
+assign scan_axi_wlast=1'b1;
+assign scan_axi_bready=1'b1;
+rv64_tmds_serializer_7series output_link(.pixel_clk_i(pixel),.serial_clk_i(serial),
+ .reset_i(~serializer_resetn),.word_i({10'b0000011111,red_word,green_word,blue_word}),
+ .tmds_p_o(tmds_p_o),.tmds_n_o(tmds_n_o));
+
+wire cv,unsupported,halted,fatal;
+wire dma_busy,dma_done,dma_error,dma_fatal,meip,seip;
+(* ASYNC_REG="TRUE", SHREG_EXTRACT="NO" *) reg usb_meta_q,usb_sync_q;
+always @(posedge clk or negedge resetn) begin
+ if(!resetn)begin usb_meta_q<=1'b0;usb_sync_q<=1'b0;end
+ else begin usb_meta_q<=usb_irq_i;usb_sync_q<=usb_meta_q;end
+end
+wire [31:0] ie,de,ae;
+assign status={16'h1065,commit_enable,usb_sync_q,seip,meip,dma_fatal,dma_error,dma_done,dma_busy,(ie!=0),(de!=0),(ae!=0),unsupported,halted,fatal,cv,resetn};
+rv64_board_system_video #(.TICK_DIV(50)) system (
+ .scan_arvalid_o(scan_axi_arvalid),
+ .scan_arid_o(scan_axi_arid),
+ .scan_araddr_o(scan_axi_araddr),
+ .scan_arlen_o(scan_axi_arlen),
+ .scan_arsize_o(scan_axi_arsize),
+ .scan_arprot_o(scan_axi_arprot),
+ .scan_arburst_o(scan_axi_arburst),
+ .scan_arlock_o(scan_axi_arlock),
+ .scan_arcache_o(scan_axi_arcache),
+ .scan_rready_o(scan_axi_rready),
+ .scan_arready_i(scan_axi_arready),
+ .scan_rvalid_i(scan_axi_rvalid),
+ .scan_rid_i(scan_axi_rid),
+ .scan_rlast_i(scan_axi_rlast),
+ .scan_rdata_i(scan_axi_rdata),
+ .scan_rresp_i(scan_axi_rresp),
+ .pixel_clk_i(pixel),
+ .scan_reader_busy_o(reader_busy),
+ .scan_queued_done_o(queued_done),
+ .scan_queued_success_o(queued_success),
+ .scan_reader_error_o(reader_error),
+ .scan_bus_bursts_o(scan_bursts_o),
+ .scan_bus_beats_o(scan_beats_o),
+ .scan_bus_frames_o(scan_frames_o),
+ .scan_bus_failed_o(scan_failed_o),
+ .ctrl_run_o(ctrl_run),
+ .ctrl_locked_o(ctrl_locked),
+ .ctrl_snapshot_busy_o(snap_busy),
+ .ctrl_snapshot_valid_o(snap_valid),
+ .video_de_o(video_de),
+ .video_hsync_o(video_hs),
+ .video_vsync_o(video_vs),
+ .video_frame_start_o(video_fs),
+ .video_hpos_o(video_hpos_o),
+ .video_vpos_o(video_vpos_o),
+ .video_crc_o(video_crc_o),
+ .video_good_o(video_good_o),
+ .video_bad_o(video_bad_o),
+ .video_underflow_o(video_underflow_o),
+ .video_marker_o(video_marker_o),
+ .video_dropped_o(video_dropped_o),
+ .video_pixels_o(video_pixels_o),
+ .tmds_blue_o(blue_word),
+ .tmds_green_o(green_word),
+ .tmds_red_o(red_word),
+
+ .ddr_arvalid_o(ddr_axi_arvalid),
+ .ddr_arid_o(ddr_axi_arid),
+ .ddr_araddr_o(ddr_axi_araddr),
+ .ddr_arlen_o(ddr_axi_arlen),
+ .ddr_arsize_o(ddr_axi_arsize),
+ .ddr_arprot_o(ddr_axi_arprot),
+ .ddr_arburst_o(ddr_axi_arburst),
+ .ddr_arlock_o(ddr_axi_arlock),
+ .ddr_arcache_o(ddr_axi_arcache),
+ .ddr_rready_o(ddr_axi_rready),
+ .ddr_awvalid_o(ddr_axi_awvalid),
+ .ddr_awid_o(ddr_axi_awid),
+ .ddr_awaddr_o(ddr_axi_awaddr),
+ .ddr_awlen_o(ddr_axi_awlen),
+ .ddr_awsize_o(ddr_axi_awsize),
+ .ddr_awprot_o(ddr_axi_awprot),
+ .ddr_awburst_o(ddr_axi_awburst),
+ .ddr_awlock_o(ddr_axi_awlock),
+ .ddr_awcache_o(ddr_axi_awcache),
+ .ddr_wvalid_o(ddr_axi_wvalid),
+ .ddr_wdata_o(ddr_axi_wdata),
+ .ddr_wstrb_o(ddr_axi_wstrb),
+ .ddr_wlast_o(ddr_axi_wlast),
+ .ddr_bready_o(ddr_axi_bready),
+ .ddr_arready_i(ddr_axi_arready),
+ .ddr_rvalid_i(ddr_axi_rvalid),
+ .ddr_rid_i(ddr_axi_rid),
+ .ddr_rlast_i(ddr_axi_rlast),
+ .ddr_rdata_i(ddr_axi_rdata),
+ .ddr_rresp_i(ddr_axi_rresp),
+ .ddr_awready_i(ddr_axi_awready),
+ .ddr_wready_i(ddr_axi_wready),
+ .ddr_bvalid_i(ddr_axi_bvalid),
+ .ddr_bid_i(ddr_axi_bid),
+ .ddr_bresp_i(ddr_axi_bresp),
+ .ps_arvalid_o(ps_axi_arvalid),
+ .ps_arid_o(ps_axi_arid),
+ .ps_araddr_o(ps_axi_araddr),
+ .ps_arlen_o(ps_axi_arlen),
+ .ps_arsize_o(ps_axi_arsize),
+ .ps_arprot_o(ps_axi_arprot),
+ .ps_arburst_o(ps_axi_arburst),
+ .ps_arlock_o(ps_axi_arlock),
+ .ps_arcache_o(ps_axi_arcache),
+ .ps_rready_o(ps_axi_rready),
+ .ps_awvalid_o(ps_axi_awvalid),
+ .ps_awid_o(ps_axi_awid),
+ .ps_awaddr_o(ps_axi_awaddr),
+ .ps_awlen_o(ps_axi_awlen),
+ .ps_awsize_o(ps_axi_awsize),
+ .ps_awprot_o(ps_axi_awprot),
+ .ps_awburst_o(ps_axi_awburst),
+ .ps_awlock_o(ps_axi_awlock),
+ .ps_awcache_o(ps_axi_awcache),
+ .ps_wvalid_o(ps_axi_wvalid),
+ .ps_wdata_o(ps_axi_wdata),
+ .ps_wstrb_o(ps_axi_wstrb),
+ .ps_wlast_o(ps_axi_wlast),
+ .ps_bready_o(ps_axi_bready),
+ .ps_arready_i(ps_axi_arready),
+ .ps_rvalid_i(ps_axi_rvalid),
+ .ps_rid_i(ps_axi_rid),
+ .ps_rlast_i(ps_axi_rlast),
+ .ps_rdata_i(ps_axi_rdata),
+ .ps_rresp_i(ps_axi_rresp),
+ .ps_awready_i(ps_axi_awready),
+ .ps_wready_i(ps_axi_wready),
+ .ps_bvalid_i(ps_axi_bvalid),
+ .ps_bid_i(ps_axi_bid),
+ .ps_bresp_i(ps_axi_bresp),
+ .clk_i(clk),
+ .aresetn_i(resetn),
+ .sources_i({30'd0,usb_sync_q}),
+ .irq_meip_o(meip),.irq_seip_o(seip),
+ .dma_busy_o(dma_busy),.dma_done_o(dma_done),.dma_error_o(dma_error),.dma_fatal_o(dma_fatal),
+ .commit_ready_i(commit_enable),
+ .commit_valid_o(cv),
+ .commit_pc_o(commit_pc),
+ .commit_cause_o(commit_cause),
+ .commit_unsupported_o(unsupported),
+ .halted_o(halted),
+ .memory_fatal_o(fatal),
+ .icache_error_o(ie),
+ .dcache_error_o(de),
+ .arb_error_o(ae),
+ .time_o(time_value),
+ .fence_complete_o(fence_complete),
+ .icache_miss_o(icache_miss),
+ .dcache_miss_o(dcache_miss),
+ .dcache_writeback_o(dcache_writeback)
+);
+endmodule

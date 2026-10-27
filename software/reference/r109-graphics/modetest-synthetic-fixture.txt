@@ -1,0 +1,28 @@
+R109_X11_IPC_PASS unix_path=1 peercred=1 fork=1 shm=1 inotify=1 bytes=256
+R109_MODETEST_BEGIN
+opened device `Persistent RV64 fixed-DMA shadow scanout` on driver `rv64lab` (version 1.0.0 at 20261026)
+Encoders:
+id crtc type possible crtcs possible clones
+31 32 none 0x00000001 0x00000000
+
+Connectors:
+id encoder status name size (mm) modes encoders
+33 31 connected HDMI-A-1 0x0 1 31
+  modes:
+  #0 800x600 60.32 800 840 968 1056 600 601 605 628 40000 flags: phsync, pvsync; type: preferred, driver
+  props:
+
+CRTCs:
+id fb pos size
+32 37 (0,0) (800x600)
+  #0 800x600 60.32 800 840 968 1056 600 601 605 628 40000 flags: phsync, pvsync; type: preferred, driver
+  props:
+
+Planes:
+id crtc fb CRTC x,y x,y gamma size possible crtcs
+30 32 37 0,0 0,0 0 0x00000001
+  formats: XR24
+  props:
+R109_MODETEST_END rc=0
+R109_GRAPHICS_PREREQUISITES_PASS official_modetest=1 unix_path=1 sysv_shm=1 inotify=1 desktop=0
+DEBIAN_MINIMAL_INIT_END

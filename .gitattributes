@@ -1,0 +1,4 @@
+# Imported RTL/Tcl bytes are source-locked, including their original line endings.
+* -text
+*.md text eol=lf
+*.yml text eol=lf

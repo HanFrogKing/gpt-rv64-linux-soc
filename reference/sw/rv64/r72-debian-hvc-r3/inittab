@@ -1,0 +1,4 @@
+hvc0::sysinit:/etc/init.d/rcS
+hvc0::respawn:-/bin/sh
+::ctrlaltdel:/bin/busybox reboot
+::shutdown:/bin/busybox sync

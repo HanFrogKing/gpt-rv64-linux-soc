@@ -1,0 +1,114 @@
+{
+  "part": "xc7z020clg484-2",
+  "clock_MHz": {
+    "system": 50,
+    "pixel": 40,
+    "serializer": 200
+  },
+  "resources": {
+    "LUT": 32827,
+    "FF": 26218,
+    "BRAM_tile": 5.0,
+    "DSP": 14
+  },
+  "timing_ns": {
+    "setup": 0.741,
+    "hold": 0.037,
+    "pulse_width": 3.408
+  },
+  "route": {
+    "routable": 54648,
+    "routed": 54648,
+    "errors": 0
+  },
+  "timing_checks": {
+    "no_clock": 0,
+    "constant_clock": 0,
+    "pulse_width_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "no_input_delay": 2,
+    "no_output_delay": 4,
+    "multiple_clock": 0,
+    "generated_clocks": 0,
+    "loops": 0,
+    "partial_input_delay": 0,
+    "partial_output_delay": 0,
+    "latch_loops": 0
+  },
+  "cdc": {
+    "summary": [
+      [
+        "CDC-3",
+        "Info",
+        "13",
+        "1-bit synchronized with ASYNC_REG property"
+      ],
+      [
+        "CDC-6",
+        "Warning",
+        "2",
+        "Multi-bit synchronized with ASYNC_REG property"
+      ],
+      [
+        "CDC-9",
+        "Info",
+        "2",
+        "Asynchronous reset synchronized with ASYNC_REG property"
+      ],
+      [
+        "CDC-15",
+        "Warning",
+        "4",
+        "Clock enable controlled CDC structure detected"
+      ]
+    ],
+    "actual_registered_datapaths": 280,
+    "min_datapath_slack_ns": 18.648,
+    "bus_skew_constraints": 7,
+    "min_bus_skew_slack_ns": 18.678,
+    "common_reset_pixel_endpoints": 15,
+    "recovery_removal_checks": 30,
+    "min_reset_slack_ns": 0.741
+  },
+  "drc": {
+    "reported_warning_count": 55,
+    "summary": [
+      [
+        "CHECK-3",
+        "Warning",
+        "1"
+      ],
+      [
+        "DPIP-1",
+        "Warning",
+        "6"
+      ],
+      [
+        "DPOP-1",
+        "Warning",
+        "3"
+      ],
+      [
+        "DPOP-2",
+        "Warning",
+        "9"
+      ],
+      [
+        "PDCN-1569",
+        "Warning",
+        "15"
+      ],
+      [
+        "REQP-1839",
+        "Warning",
+        "20"
+      ],
+      [
+        "RTSTAT-10",
+        "Warning",
+        "1"
+      ]
+    ],
+    "rule_limit": "REQP-1839 truncated at20; underlying count not inferred"
+  }
+}

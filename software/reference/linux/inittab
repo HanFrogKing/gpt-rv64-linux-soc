@@ -1,0 +1,4 @@
+ttyS0::sysinit:/etc/rcS
+ttyS0::respawn:-/bin/sh
+::ctrlaltdel:/sbin/reboot
+::shutdown:/bin/umount /tmp /sys /proc

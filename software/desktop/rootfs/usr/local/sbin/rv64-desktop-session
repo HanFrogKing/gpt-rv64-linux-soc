@@ -1,0 +1,19 @@
+#!/bin/busybox sh
+set -eu
+export PATH=/usr/sbin:/usr/bin:/sbin:/bin
+export HOME=/root
+export XDG_RUNTIME_DIR=/tmp/rv64-runtime
+export XDG_CACHE_HOME=/tmp/rv64-cache
+export XDG_CONFIG_HOME=/tmp/rv64-config
+export XAUTHORITY=/tmp/rv64-Xauthority
+/bin/busybox mkdir -p "$XDG_RUNTIME_DIR" "$XDG_CACHE_HOME" "$XDG_CONFIG_HOME" /tmp/rv64-fonts
+/bin/busybox chmod 700 "$XDG_RUNTIME_DIR"
+for f in /usr/share/fonts/X11/misc/*.pcf.gz; do
+    /bin/busybox ln -sf "$f" /tmp/rv64-fonts/
+done
+if test -f /etc/X11/fonts/misc/xfonts-base.alias; then
+    /bin/busybox cp /etc/X11/fonts/misc/xfonts-base.alias /tmp/rv64-fonts/fonts.alias
+fi
+/usr/bin/mkfontdir /tmp/rv64-fonts
+echo RV64_DESKTOP_LAUNCH_ATTEMPT_NOT_ACCEPTANCE
+exec /usr/bin/xinit /usr/local/libexec/rv64-openbox-session -- /usr/lib/xorg/Xorg :0 vt1 -config /etc/X11/xorg-rv64lab.conf -nolisten tcp -noreset -logfile /tmp/Xorg.0.log

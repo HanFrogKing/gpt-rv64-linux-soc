@@ -1,0 +1,65 @@
+{
+  "status": "PASS_PUBLIC_SOURCE_RELEASE_CHECKS",
+  "date_local": "2026-10-28 Asia/Shanghai",
+  "board_actions": false,
+  "media_actions": false,
+  "functional_rtl_changed": false,
+  "whole_vivado_rerun": false,
+  "new_physical_boot": false,
+  "checks": {
+    "native_video": {
+      "status": "PASS",
+      "summary": "R95_VIDEO_TIMING_PASS checked=7835868 complete_frames=2 resets=29",
+      "log_sha256": "ebbc7479a9539178b17e7b4e1a22dc3932abbf36164ef02e8b2854bc1ea9f7f0"
+    },
+    "linux_source": {
+      "status": "PASS",
+      "summary": "verified_project_files=13",
+      "log_sha256": "d6e0f8ac735440341f5a75448a5f6eb62338753f9cd827caa241816203cb70f3"
+    },
+    "opensbi_source": {
+      "status": "PASS",
+      "summary": "OPENSBI_SOURCE_READY",
+      "log_sha256": "65c77afae25823da15aafbb5cc583a760d82d541625f103e660b4df42c1615ac"
+    },
+    "debian_package_hashes": {
+      "status": "PASS",
+      "summary": "DEBIAN_PACKAGE_HASH_PASS 228",
+      "log_sha256": "e36a5ac975d2fadf5a6fabcb20cb768a3e0cc72782beec9f0d1da842c332eb42"
+    },
+    "device_tree": {
+      "status": "PASS",
+      "compiler_warnings": 0,
+      "binary_identical_to_real_loaded_DTB_except_fresh_64_byte_seed_and_load_padding": true
+    },
+    "tcl_structure": {
+      "status": "PASS",
+      "complete_scripts": 5,
+      "scope": "Syntax completeness only, not a new Vivado run"
+    },
+    "python_syntax": {
+      "status": "PASS",
+      "files": 35
+    },
+    "source_and_documentation": {
+      "status": "PASS",
+      "import_records": 147,
+      "kernel_overlay_files": 13,
+      "board_source_references": 55,
+      "original_machine_paths_removed": true,
+      "secret_pattern_scan": true
+    },
+    "desktop_shell_syntax": {
+      "status": "PASS",
+      "method": "sh -n",
+      "note": "Run separately before recording; no target execution"
+    },
+    "clean_git_checkout": {
+      "status": "PASS",
+      "import_pins": 147,
+      "exact_imported_blob_hashes_checked_before_commit": 142,
+      "script_executable_modes_preserved": true,
+      "log_sha256": "d45ad8af3f9ec60092c3f73ef2407dd560a6cb38251e0e647124ce0bdbc7c932"
+    }
+  }
+}

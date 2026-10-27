@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "R65 RV64GC candidate recovery; simulation acceptance pending"
+exec /sbin/init

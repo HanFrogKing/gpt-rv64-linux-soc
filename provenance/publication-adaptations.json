@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-28",
+  "purpose": "Source-only publication of the physically demonstrated R106/R111/R115 configuration",
+  "modified_reference_paths": [
+    "reference/build-scripts/build_artifact_guard.py",
+    "reference/build-scripts/build_artifact_guard_v2.py",
+    "reference/build-scripts/r110_desktop_package_prepare_v2.py",
+    "reference/build-scripts/r111_desktop_payload_prepare_v4.py",
+    "reference/build-scripts/r111_storage_fixture_prepare_v1.py"
+  ],
+  "changes": [
+    "Public Vivado build.tcl maps the original selected RTL paths to repository-relative rtl/ and third_party/; DRC Error string explicitly quoted. Original build-board-r2.tcl retained.",
+    "Kernel .config clears the original absolute INITRAMFS_SOURCE; user must provide an initramfs.",
+    "Actual loaded DT decompiled; fixed historical RNG seed replaced by an incbin generated freshly per boot bundle.",
+    "Historical reference recipes replace original workstation paths with documented placeholders and are not the portable build entry.",
+    "Portable native video runner adapts the bounded per-command PCH cleanup policy from build_artifact_guard_v2; frozen original project files are unchanged.",
+    "No proprietary generated IP, FSBL/BSP, toolchain or operating-system binary image is distributed.",
+    "Decompiled DT numeric interrupt/PHY references rewritten as equivalent labels, retaining original explicit phandle values.",
+    "Only selected software preparation recipes are published; failed and unrelated historical hardware gate revisions remain in the sealed original snapshot, not this release."
+  ],
+  "functional_rtl_modified": false,
+  "board_actions": false,
+  "media_actions": false
+}

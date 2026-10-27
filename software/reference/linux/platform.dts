@@ -1,0 +1,75 @@
+/dts-v1/;
+/ {
+    #address-cells = <2>;
+    #size-cells = <2>;
+    compatible = "rv64lab,sim";
+    model = "RV64 RTL Linux simulation platform";
+    chosen {
+        stdout-path = "/soc/serial@10000000:115200n8";
+        bootargs = "console=ttyS0,115200 earlycon=uart8250,mmio,0x10000000 rdinit=/init loglevel=7 panic=-1 random.trust_bootloader=on";
+        // Fresh host OS entropy provided through the standard bootloader ABI;
+        // this is NOT a hardware RNG or deterministic PRNG advertised as one.
+        rng-seed = /incbin/("boot-seed.bin");
+    };
+    cpus {
+        #address-cells = <1>;
+        #size-cells = <0>;
+        timebase-frequency = <1000000>;
+        cpu@0 {
+            device_type = "cpu";
+            reg = <0>;
+            status = "okay";
+            compatible = "riscv";
+            riscv,isa = "rv64ima_zicsr_zifencei_zicntr_svadu";
+            mmu-type = "riscv,sv39";
+            clock-frequency = <10000000>;
+            cpu_intc: interrupt-controller {
+                #interrupt-cells = <1>;
+                #address-cells = <0>;
+                compatible = "riscv,cpu-intc";
+                interrupt-controller;
+            };
+        };
+    };
+    memory@80000000 {
+        device_type = "memory";
+        reg = <0 0x80000000 0 0x08000000>;
+    };
+    soc {
+        #address-cells = <2>;
+        #size-cells = <2>;
+        compatible = "simple-bus";
+        ranges;
+        clint@2000000 {
+            compatible = "rv64lab,clint", "sifive,clint0";
+            reg = <0 0x02000000 0 0x10000>;
+            interrupts-extended = <&cpu_intc 3 &cpu_intc 7>;
+        };
+        serial@10000000 {
+            compatible = "ns16550a";
+            reg = <0 0x10000000 0 0x100>;
+            clock-frequency = <3686400>;
+            current-speed = <115200>;
+            reg-shift = <0>;
+            reg-io-width = <1>;
+            // No external interrupt line/PLIC: the 8250 driver polls via timer.
+        };
+        test: test@100000 {
+            compatible = "syscon", "simple-mfd";
+            reg = <0 0x00100000 0 0x1000>;
+            reg-io-width = <4>;
+        };
+    };
+    reboot {
+        compatible = "syscon-reboot";
+        regmap = <&test>;
+        offset = <0>;
+        value = <0x7777>;
+    };
+    poweroff {
+        compatible = "syscon-poweroff";
+        regmap = <&test>;
+        offset = <0>;
+        value = <0x5555>;
+    };
+};

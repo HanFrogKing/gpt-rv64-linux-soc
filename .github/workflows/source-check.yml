@@ -1,0 +1,18 @@
+name: Source and video timing checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check source import, build paths and documentation
+        run: python3 tools/check_release.py
+      - name: Install native RTL test dependencies
+        run: sudo apt-get update && sudo apt-get install -y verilator g++ make
+      - name: Test the real 800x600 video timing RTL
+        run: python3 tools/run_video_test.py

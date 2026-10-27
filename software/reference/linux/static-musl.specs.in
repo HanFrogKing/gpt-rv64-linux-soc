@@ -1,0 +1,12 @@
+*startfile:
+@PREFIX@/lib/crt1.o @PREFIX@/lib/crti.o crtbegin.o%s
+
+*endfile:
+crtend.o%s @PREFIX@/lib/crtn.o
+
+*lib:
+--start-group -lc --end-group
+
+*link:
+-melf64lriscv -static -nostdlib %{mno-relax:--no-relax}
+

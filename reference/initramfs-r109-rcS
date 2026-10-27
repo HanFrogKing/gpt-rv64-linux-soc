@@ -1,0 +1,29 @@
+#!/bin/busybox sh
+export PATH=/sbin:/bin:/usr/sbin:/usr/bin
+export HOME=/root
+export TERM=vt100
+fail() { echo "DEBIAN_HVC_SELFTEST_FAIL $1"; exit 1; }
+/bin/busybox mount -t proc proc /proc || fail proc
+/bin/busybox mount -t sysfs sysfs /sys || fail sysfs
+/bin/busybox mount -t devtmpfs devtmpfs /dev || fail devtmpfs
+/bin/busybox mkdir -p /dev/pts /run /tmp
+/bin/busybox mount -t devpts devpts /dev/pts || fail devpts
+/bin/busybox mount -t tmpfs tmpfs /tmp || fail tmpfs
+/bin/busybox chmod 1777 /tmp
+echo DEBIAN_MINIMAL_INIT_BEGIN
+/usr/local/libexec/rv64-selftest || fail process-mmu
+/usr/local/libexec/rv64-fp-context || fail fp-context
+/usr/bin/hello || fail hello
+/usr/bin/mawk 'BEGIN { printf "DEBIAN_MAWK_SQRT %.17g\n", sqrt(2) }' || fail mawk
+/bin/sh -c 'echo DEBIAN_DASH_OK; echo debian-io >/tmp/debian-io; read v </tmp/debian-io; test "$v" = debian-io' || fail dash
+/usr/local/libexec/rv64-drm-selftest || fail drm-kms
+/bin/busybox cat /sys/class/graphics/fb0/name || fail fbdev-sysfs
+/bin/busybox cat /sys/bus/platform/devices/4000000.scanout/scanout_state || fail drm-state
+/bin/busybox grep -q "qualified=1 failed=0.*retained=1" /sys/bus/platform/devices/4000000.scanout/scanout_state || fail scanout-health
+/usr/local/libexec/rv64-x11-ipc-probe || fail x11-ipc
+echo R109_MODETEST_BEGIN
+/bin/busybox timeout 30 /usr/local/libexec/rv64-modetest-inventory || fail official-modetest
+echo R109_MODETEST_END rc=0
+echo R109_GRAPHICS_PREREQUISITES_PASS official_modetest=1 unix_path=1 sysv_shm=1 inotify=1 desktop=0
+echo DEBIAN_MINIMAL_INIT_END
+/usr/local/libexec/tty-drain || fail tty-drain

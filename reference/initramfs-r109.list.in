@@ -1,0 +1,766 @@
+slink /bin usr/bin 0777 0 0
+dir /boot 0755 0 0
+dir /dev 0755 0 0
+dir /etc 0755 0 0
+dir /home 0755 0 0
+file /init ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/init 0755 0 0
+slink /lib usr/lib 0777 0 0
+dir /proc 0755 0 0
+dir /root 0755 0 0
+dir /run 0755 0 0
+slink /sbin usr/sbin 0777 0 0
+dir /sys 0755 0 0
+dir /tmp 0755 0 0
+dir /usr 0755 0 0
+dir /var 0755 0 0
+dir /dev/pts 0755 0 0
+file /etc/debian_version ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/debian_version 0644 0 0
+dir /etc/default 0755 0 0
+dir /etc/dpkg 0755 0 0
+file /etc/fstab ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/fstab 0644 0 0
+file /etc/group ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/group 0644 0 0
+file /etc/host.conf ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/host.conf 0644 0 0
+dir /etc/init.d 0755 0 0
+file /etc/inittab ${RESEARCH_ROOT}/sw/rv64/r72-debian-hvc-r3/inittab 0644 0 0
+file /etc/issue ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/issue 0644 0 0
+file /etc/issue.net ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/issue.net 0644 0 0
+dir /etc/ld.so.conf.d 0755 0 0
+slink /etc/os-release ../usr/lib/os-release 0777 0 0
+file /etc/passwd ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/passwd 0644 0 0
+dir /etc/profile.d 0755 0 0
+file /etc/rv64lab-rootfs-note ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/rv64lab-rootfs-note 0644 0 0
+dir /etc/skel 0755 0 0
+dir /etc/update-motd.d 0755 0 0
+dir /usr/bin 0755 0 0
+dir /usr/games 0755 0 0
+dir /usr/include 0755 0 0
+dir /usr/lib 0755 0 0
+dir /usr/sbin 0755 0 0
+dir /usr/share 0755 0 0
+dir /usr/src 0755 0 0
+dir /var/backups 0755 0 0
+dir /var/cache 0755 0 0
+dir /var/lib 0755 0 0
+dir /var/local 0755 0 0
+dir /var/lock 0755 0 0
+dir /var/log 0755 0 0
+dir /var/run 0755 0 0
+dir /var/spool 0755 0 0
+dir /var/tmp 0755 0 0
+dir /etc/dpkg/origins 0755 0 0
+file /etc/init.d/rcS ${RESEARCH_ROOT}/build/rv64/r109-graphics-userspace-r2/rcS 0755 0 0
+file /etc/ld.so.conf.d/riscv64-linux-gnu.conf ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/ld.so.conf.d/riscv64-linux-gnu.conf 0644 0 0
+file /etc/profile.d/rv64lab.sh ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/profile.d/rv64lab.sh 0644 0 0
+file /etc/update-motd.d/10-uname ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/update-motd.d/10-uname 0755 0 0
+file /usr/bin/busybox ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/bin/busybox 0755 0 0
+file /usr/bin/dash ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/bin/dash 0755 0 0
+file /usr/bin/hello ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/bin/hello 0755 0 0
+file /usr/bin/ischroot ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/bin/ischroot 0755 0 0
+file /usr/bin/mawk ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/bin/mawk 0755 0 0
+file /usr/bin/run-parts ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/bin/run-parts 0755 0 0
+file /usr/bin/savelog ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/bin/savelog 0755 0 0
+slink /usr/bin/sh dash 0777 0 0
+file /usr/bin/tempfile ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/bin/tempfile 0755 0 0
+file /usr/bin/which.debianutils ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/bin/which.debianutils 0755 0 0
+slink /usr/lib/ld-linux-riscv64-lp64d.so.1 riscv64-linux-gnu/ld-linux-riscv64-lp64d.so.1 0777 0 0
+file /usr/lib/os-release ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/os-release 0644 0 0
+dir /usr/lib/riscv64-linux-gnu 0755 0 0
+file /usr/sbin/add-shell ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/sbin/add-shell 0755 0 0
+file /usr/sbin/installkernel ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/sbin/installkernel 0755 0 0
+file /usr/sbin/remove-shell ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/sbin/remove-shell 0755 0 0
+file /usr/sbin/update-shells ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/sbin/update-shells 0755 0 0
+dir /usr/share/base-files 0755 0 0
+dir /usr/share/common-licenses 0755 0 0
+dir /usr/share/debianutils 0755 0 0
+dir /usr/share/dict 0755 0 0
+dir /usr/share/doc 0755 0 0
+dir /usr/share/info 0755 0 0
+dir /usr/share/initramfs-tools 0755 0 0
+dir /usr/share/lintian 0755 0 0
+dir /usr/share/locale 0755 0 0
+dir /usr/share/man 0755 0 0
+dir /usr/share/menu 0755 0 0
+dir /usr/share/misc 0755 0 0
+dir /var/lib/dpkg 0755 0 0
+dir /var/lib/misc 0755 0 0
+file /etc/dpkg/origins/debian ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/etc/dpkg/origins/debian 0644 0 0
+dir /usr/lib/riscv64-linux-gnu/gconv 0755 0 0
+file /usr/lib/riscv64-linux-gnu/ld-linux-riscv64-lp64d.so.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/ld-linux-riscv64-lp64d.so.1 0755 0 0
+file /usr/lib/riscv64-linux-gnu/libBrokenLocale.so.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libBrokenLocale.so.1 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libanl.so.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libanl.so.1 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libc.so.6 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libc.so.6 0755 0 0
+file /usr/lib/riscv64-linux-gnu/libc_malloc_debug.so.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libc_malloc_debug.so.0 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libdl.so.2 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libdl.so.2 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libgcc_s.so.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libgcc_s.so.1 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libm.so.6 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libm.so.6 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libmemusage.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libmemusage.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libnsl.so.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libnsl.so.1 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libnss_compat.so.2 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libnss_compat.so.2 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libnss_dns.so.2 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libnss_dns.so.2 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libnss_files.so.2 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libnss_files.so.2 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libnss_hesiod.so.2 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libnss_hesiod.so.2 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libpcprofile.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libpcprofile.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libpthread.so.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libpthread.so.0 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libresolv.so.2 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libresolv.so.2 0644 0 0
+file /usr/lib/riscv64-linux-gnu/librt.so.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/librt.so.1 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libthread_db.so.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libthread_db.so.1 0644 0 0
+file /usr/lib/riscv64-linux-gnu/libutil.so.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/libutil.so.1 0644 0 0
+file /usr/share/base-files/dot.bashrc ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/base-files/dot.bashrc 0644 0 0
+file /usr/share/base-files/dot.profile ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/base-files/dot.profile 0644 0 0
+file /usr/share/base-files/dot.profile.md5sums ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/base-files/dot.profile.md5sums 0644 0 0
+file /usr/share/base-files/info.dir ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/base-files/info.dir 0644 0 0
+file /usr/share/base-files/motd ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/base-files/motd 0644 0 0
+file /usr/share/base-files/profile ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/base-files/profile 0644 0 0
+file /usr/share/base-files/profile.md5sums ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/base-files/profile.md5sums 0644 0 0
+file /usr/share/base-files/staff-group-for-usr-local ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/base-files/staff-group-for-usr-local 0644 0 0
+file /usr/share/common-licenses/AGPL-3.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/AGPL-3.0 0644 0 0
+file /usr/share/common-licenses/Apache-2.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/Apache-2.0 0644 0 0
+file /usr/share/common-licenses/Artistic ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/Artistic 0644 0 0
+file /usr/share/common-licenses/Artistic-2.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/Artistic-2.0 0644 0 0
+file /usr/share/common-licenses/BSD ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/BSD 0644 0 0
+file /usr/share/common-licenses/BSL-1.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/BSL-1.0 0644 0 0
+file /usr/share/common-licenses/CC-BY-3.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/CC-BY-3.0 0644 0 0
+file /usr/share/common-licenses/CC-BY-4.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/CC-BY-4.0 0644 0 0
+file /usr/share/common-licenses/CC-BY-SA-3.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/CC-BY-SA-3.0 0644 0 0
+file /usr/share/common-licenses/CC-BY-SA-4.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/CC-BY-SA-4.0 0644 0 0
+file /usr/share/common-licenses/CC0-1.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/CC0-1.0 0644 0 0
+slink /usr/share/common-licenses/GFDL GFDL-1.3 0777 0 0
+file /usr/share/common-licenses/GFDL-1.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/GFDL-1.1 0644 0 0
+file /usr/share/common-licenses/GFDL-1.2 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/GFDL-1.2 0644 0 0
+file /usr/share/common-licenses/GFDL-1.3 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/GFDL-1.3 0644 0 0
+slink /usr/share/common-licenses/GPL GPL-3 0777 0 0
+file /usr/share/common-licenses/GPL-1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/GPL-1 0644 0 0
+file /usr/share/common-licenses/GPL-2 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/GPL-2 0644 0 0
+file /usr/share/common-licenses/GPL-3 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/GPL-3 0644 0 0
+slink /usr/share/common-licenses/LGPL LGPL-3 0777 0 0
+file /usr/share/common-licenses/LGPL-2 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/LGPL-2 0644 0 0
+file /usr/share/common-licenses/LGPL-2.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/LGPL-2.1 0644 0 0
+file /usr/share/common-licenses/LGPL-3 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/LGPL-3 0644 0 0
+file /usr/share/common-licenses/MPL-1.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/MPL-1.1 0644 0 0
+file /usr/share/common-licenses/MPL-2.0 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/MPL-2.0 0644 0 0
+file /usr/share/common-licenses/OFL-1.1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/common-licenses/OFL-1.1 0644 0 0
+file /usr/share/debianutils/shells ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/debianutils/shells 0644 0 0
+dir /usr/share/debianutils/shells.d 0755 0 0
+dir /usr/share/doc/base-files 0755 0 0
+dir /usr/share/doc/busybox-static 0755 0 0
+dir /usr/share/doc/dash 0755 0 0
+dir /usr/share/doc/debianutils 0755 0 0
+dir /usr/share/doc/gcc-14-base 0755 0 0
+dir /usr/share/doc/hello 0755 0 0
+dir /usr/share/doc/libc6 0755 0 0
+slink /usr/share/doc/libgcc-s1 gcc-14-base 0777 0 0
+dir /usr/share/doc/mawk 0755 0 0
+file /usr/share/info/hello.info.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/info/hello.info.gz 0644 0 0
+dir /usr/share/initramfs-tools/conf-hooks.d 0755 0 0
+dir /usr/share/initramfs-tools/hooks 0755 0 0
+dir /usr/share/lintian/overrides 0755 0 0
+dir /usr/share/locale/bg 0755 0 0
+dir /usr/share/locale/ca 0755 0 0
+dir /usr/share/locale/da 0755 0 0
+dir /usr/share/locale/de 0755 0 0
+dir /usr/share/locale/el 0755 0 0
+dir /usr/share/locale/eo 0755 0 0
+dir /usr/share/locale/es 0755 0 0
+dir /usr/share/locale/et 0755 0 0
+dir /usr/share/locale/eu 0755 0 0
+dir /usr/share/locale/fa 0755 0 0
+dir /usr/share/locale/fi 0755 0 0
+dir /usr/share/locale/fr 0755 0 0
+dir /usr/share/locale/ga 0755 0 0
+dir /usr/share/locale/gl 0755 0 0
+dir /usr/share/locale/he 0755 0 0
+dir /usr/share/locale/hr 0755 0 0
+dir /usr/share/locale/hu 0755 0 0
+dir /usr/share/locale/id 0755 0 0
+dir /usr/share/locale/it 0755 0 0
+dir /usr/share/locale/ja 0755 0 0
+dir /usr/share/locale/ka 0755 0 0
+dir /usr/share/locale/ko 0755 0 0
+dir /usr/share/locale/lv 0755 0 0
+dir /usr/share/locale/ms 0755 0 0
+dir /usr/share/locale/nb 0755 0 0
+dir /usr/share/locale/nl 0755 0 0
+dir /usr/share/locale/nn 0755 0 0
+dir /usr/share/locale/pl 0755 0 0
+dir /usr/share/locale/pt 0755 0 0
+dir /usr/share/locale/pt_BR 0755 0 0
+dir /usr/share/locale/ro 0755 0 0
+dir /usr/share/locale/ru 0755 0 0
+dir /usr/share/locale/sk 0755 0 0
+dir /usr/share/locale/sl 0755 0 0
+dir /usr/share/locale/sr 0755 0 0
+dir /usr/share/locale/sv 0755 0 0
+dir /usr/share/locale/th 0755 0 0
+dir /usr/share/locale/tr 0755 0 0
+dir /usr/share/locale/uk 0755 0 0
+dir /usr/share/locale/vi 0755 0 0
+dir /usr/share/locale/zh_CN 0755 0 0
+dir /usr/share/locale/zh_TW 0755 0 0
+dir /usr/share/man/de 0755 0 0
+dir /usr/share/man/es 0755 0 0
+dir /usr/share/man/fr 0755 0 0
+dir /usr/share/man/it 0755 0 0
+dir /usr/share/man/ja 0755 0 0
+dir /usr/share/man/man1 0755 0 0
+dir /usr/share/man/man7 0755 0 0
+dir /usr/share/man/man8 0755 0 0
+dir /usr/share/man/pl 0755 0 0
+dir /usr/share/man/pt 0755 0 0
+dir /usr/share/man/sl 0755 0 0
+file /usr/share/menu/dash ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/menu/dash 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ANSI_X3.110.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ANSI_X3.110.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ARMSCII-8.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ARMSCII-8.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ASMO_449.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ASMO_449.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/BIG5.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/BIG5.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/BIG5HKSCS.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/BIG5HKSCS.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/BRF.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/BRF.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP10007.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP10007.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP1125.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP1125.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP1250.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP1250.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP1251.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP1251.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP1252.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP1252.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP1253.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP1253.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP1254.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP1254.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP1255.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP1255.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP1256.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP1256.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP1257.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP1257.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP1258.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP1258.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP737.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP737.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP770.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP770.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP771.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP771.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP772.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP772.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP773.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP773.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP774.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP774.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP775.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP775.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CP932.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CP932.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CSN_369103.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CSN_369103.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/CWI.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/CWI.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/DEC-MCS.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/DEC-MCS.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-AT-DE-A.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-AT-DE-A.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-AT-DE.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-AT-DE.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-CA-FR.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-CA-FR.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-DK-NO-A.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-DK-NO-A.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-DK-NO.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-DK-NO.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-ES-A.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-ES-A.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-ES-S.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-ES-S.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-ES.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-ES.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-FI-SE-A.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-FI-SE-A.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-FI-SE.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-FI-SE.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-FR.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-FR.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-IS-FRISS.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-IS-FRISS.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-IT.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-IT.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-PT.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-PT.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-UK.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-UK.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EBCDIC-US.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EBCDIC-US.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ECMA-CYRILLIC.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ECMA-CYRILLIC.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EUC-CN.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EUC-CN.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EUC-JISX0213.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EUC-JISX0213.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EUC-JP-MS.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EUC-JP-MS.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EUC-JP.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EUC-JP.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EUC-KR.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EUC-KR.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/EUC-TW.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/EUC-TW.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/GB18030.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/GB18030.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/GBBIG5.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/GBBIG5.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/GBGBK.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/GBGBK.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/GBK.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/GBK.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/GEORGIAN-ACADEMY.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/GEORGIAN-ACADEMY.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/GEORGIAN-PS.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/GEORGIAN-PS.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/GOST_19768-74.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/GOST_19768-74.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/GREEK-CCITT.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/GREEK-CCITT.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/GREEK7-OLD.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/GREEK7-OLD.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/GREEK7.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/GREEK7.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/HP-GREEK8.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/HP-GREEK8.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/HP-ROMAN8.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/HP-ROMAN8.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/HP-ROMAN9.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/HP-ROMAN9.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/HP-THAI8.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/HP-THAI8.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/HP-TURKISH8.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/HP-TURKISH8.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM037.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM037.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM038.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM038.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1004.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1004.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1008.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1008.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1008_420.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1008_420.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1025.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1025.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1026.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1026.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1046.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1046.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1047.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1047.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1097.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1097.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1112.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1112.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1122.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1122.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1123.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1123.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1124.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1124.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1129.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1129.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1130.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1130.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1132.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1132.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1133.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1133.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1137.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1137.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1140.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1140.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1141.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1141.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1142.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1142.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1143.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1143.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1144.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1144.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1145.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1145.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1146.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1146.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1147.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1147.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1148.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1148.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1149.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1149.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1153.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1153.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1154.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1154.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1155.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1155.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1156.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1156.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1157.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1157.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1158.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1158.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1160.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1160.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1161.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1161.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1162.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1162.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1163.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1163.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1164.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1164.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1166.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1166.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1167.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1167.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM12712.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM12712.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1364.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1364.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1371.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1371.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1388.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1388.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1390.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1390.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM1399.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM1399.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM16804.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM16804.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM256.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM256.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM273.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM273.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM274.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM274.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM275.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM275.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM277.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM277.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM278.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM278.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM280.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM280.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM281.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM281.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM284.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM284.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM285.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM285.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM290.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM290.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM297.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM297.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM420.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM420.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM423.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM423.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM424.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM424.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM437.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM437.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM4517.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM4517.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM4899.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM4899.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM4909.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM4909.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM4971.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM4971.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM500.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM500.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM5347.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM5347.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM803.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM803.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM850.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM850.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM851.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM851.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM852.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM852.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM855.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM855.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM856.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM856.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM857.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM857.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM858.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM858.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM860.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM860.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM861.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM861.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM862.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM862.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM863.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM863.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM864.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM864.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM865.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM865.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM866.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM866.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM866NAV.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM866NAV.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM868.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM868.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM869.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM869.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM870.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM870.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM871.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM871.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM874.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM874.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM875.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM875.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM880.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM880.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM891.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM891.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM901.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM901.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM902.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM902.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM903.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM903.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM9030.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM9030.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM904.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM904.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM905.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM905.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM9066.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM9066.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM918.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM918.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM921.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM921.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM922.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM922.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM930.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM930.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM932.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM932.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM933.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM933.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM935.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM935.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM937.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM937.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM939.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM939.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM943.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM943.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IBM9448.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IBM9448.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/IEC_P27-1.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/IEC_P27-1.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/INIS-8.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/INIS-8.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/INIS-CYRILLIC.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/INIS-CYRILLIC.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/INIS.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/INIS.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISIRI-3342.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISIRI-3342.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO-2022-CN-EXT.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO-2022-CN-EXT.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO-2022-CN.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO-2022-CN.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO-2022-JP-3.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO-2022-JP-3.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO-2022-JP.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO-2022-JP.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO-2022-KR.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO-2022-KR.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO-IR-197.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO-IR-197.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO-IR-209.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO-IR-209.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO646.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO646.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-1.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-1.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-10.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-10.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-11.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-11.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-13.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-13.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-14.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-14.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-15.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-15.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-16.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-16.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-2.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-2.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-3.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-3.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-4.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-4.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-5.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-5.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-6.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-6.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-7.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-7.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-8.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-8.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-9.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-9.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO8859-9E.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO8859-9E.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO_10367-BOX.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO_10367-BOX.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO_11548-1.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO_11548-1.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO_2033.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO_2033.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO_5427-EXT.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO_5427-EXT.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO_5427.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO_5427.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO_5428.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO_5428.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO_6937-2.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO_6937-2.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/ISO_6937.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/ISO_6937.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/JOHAB.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/JOHAB.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/KOI-8.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/KOI-8.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/KOI8-R.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/KOI8-R.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/KOI8-RU.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/KOI8-RU.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/KOI8-T.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/KOI8-T.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/KOI8-U.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/KOI8-U.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/LATIN-GREEK-1.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/LATIN-GREEK-1.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/LATIN-GREEK.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/LATIN-GREEK.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/MAC-CENTRALEUROPE.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/MAC-CENTRALEUROPE.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/MAC-IS.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/MAC-IS.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/MAC-SAMI.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/MAC-SAMI.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/MAC-UK.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/MAC-UK.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/MACINTOSH.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/MACINTOSH.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/MIK.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/MIK.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/NATS-DANO.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/NATS-DANO.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/NATS-SEFI.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/NATS-SEFI.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/PT154.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/PT154.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/RK1048.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/RK1048.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/SAMI-WS2.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/SAMI-WS2.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/SHIFT_JISX0213.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/SHIFT_JISX0213.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/SJIS.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/SJIS.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/T.61.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/T.61.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/TCVN5712-1.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/TCVN5712-1.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/TIS-620.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/TIS-620.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/TSCII.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/TSCII.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/UHC.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/UHC.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/UNICODE.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/UNICODE.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/UTF-16.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/UTF-16.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/UTF-32.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/UTF-32.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/UTF-7.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/UTF-7.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/VISCII.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/VISCII.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/gconv-modules ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/gconv-modules 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/gconv-modules.cache ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/gconv-modules.cache 0644 0 0
+dir /usr/lib/riscv64-linux-gnu/gconv/gconv-modules.d 0755 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/libCNS.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/libCNS.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/libGB.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/libGB.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/libISOIR165.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/libISOIR165.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/libJIS.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/libJIS.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/libJISX0213.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/libJISX0213.so 0644 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/libKSC.so ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/libKSC.so 0644 0 0
+file /usr/share/debianutils/shells.d/dash ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/debianutils/shells.d/dash 0644 0 0
+slink /usr/share/doc/base-files/FAQ README 0777 0 0
+file /usr/share/doc/base-files/NEWS.Debian.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/base-files/NEWS.Debian.gz 0644 0 0
+file /usr/share/doc/base-files/README ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/base-files/README 0644 0 0
+file /usr/share/doc/base-files/README.FHS ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/base-files/README.FHS 0644 0 0
+file /usr/share/doc/base-files/changelog.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/base-files/changelog.gz 0644 0 0
+file /usr/share/doc/base-files/copyright ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/base-files/copyright 0644 0 0
+file /usr/share/doc/busybox-static/changelog.Debian.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/changelog.Debian.gz 0644 0 0
+file /usr/share/doc/busybox-static/changelog.Debian.riscv64.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/changelog.Debian.riscv64.gz 0644 0 0
+file /usr/share/doc/busybox-static/copyright ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/copyright 0644 0 0
+dir /usr/share/doc/busybox-static/examples 0755 0 0
+file /usr/share/doc/dash/README.Debian.diet ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/dash/README.Debian.diet 0644 0 0
+file /usr/share/doc/dash/README.source ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/dash/README.source 0644 0 0
+file /usr/share/doc/dash/changelog.Debian.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/dash/changelog.Debian.gz 0644 0 0
+file /usr/share/doc/dash/changelog.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/dash/changelog.gz 0644 0 0
+file /usr/share/doc/dash/copyright ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/dash/copyright 0644 0 0
+file /usr/share/doc/debianutils/README.shells ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/debianutils/README.shells 0644 0 0
+file /usr/share/doc/debianutils/changelog.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/debianutils/changelog.gz 0644 0 0
+file /usr/share/doc/debianutils/copyright ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/debianutils/copyright 0644 0 0
+file /usr/share/doc/gcc-14-base/README.Debian.riscv64.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/gcc-14-base/README.Debian.riscv64.gz 0644 0 0
+file /usr/share/doc/gcc-14-base/TODO.Debian ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/gcc-14-base/TODO.Debian 0644 0 0
+file /usr/share/doc/gcc-14-base/changelog.Debian.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/gcc-14-base/changelog.Debian.gz 0644 0 0
+file /usr/share/doc/gcc-14-base/copyright ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/gcc-14-base/copyright 0644 0 0
+file /usr/share/doc/hello/NEWS.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/hello/NEWS.gz 0644 0 0
+file /usr/share/doc/hello/changelog.Debian.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/hello/changelog.Debian.gz 0644 0 0
+file /usr/share/doc/hello/changelog.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/hello/changelog.gz 0644 0 0
+file /usr/share/doc/hello/copyright ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/hello/copyright 0644 0 0
+file /usr/share/doc/libc6/NEWS.Debian.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/libc6/NEWS.Debian.gz 0644 0 0
+file /usr/share/doc/libc6/NEWS.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/libc6/NEWS.gz 0644 0 0
+file /usr/share/doc/libc6/README.Debian.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/libc6/README.Debian.gz 0644 0 0
+file /usr/share/doc/libc6/README.hesiod.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/libc6/README.hesiod.gz 0644 0 0
+file /usr/share/doc/libc6/changelog.Debian.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/libc6/changelog.Debian.gz 0644 0 0
+file /usr/share/doc/libc6/changelog.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/libc6/changelog.gz 0644 0 0
+file /usr/share/doc/libc6/copyright ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/libc6/copyright 0644 0 0
+file /usr/share/doc/mawk/ACKNOWLEDGMENT ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/ACKNOWLEDGMENT 0644 0 0
+file /usr/share/doc/mawk/README ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/README 0644 0 0
+file /usr/share/doc/mawk/changelog.Debian.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/changelog.Debian.gz 0644 0 0
+file /usr/share/doc/mawk/changelog.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/changelog.gz 0644 0 0
+file /usr/share/doc/mawk/copyright ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/copyright 0644 0 0
+dir /usr/share/doc/mawk/examples 0755 0 0
+file /usr/share/initramfs-tools/conf-hooks.d/busybox ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/initramfs-tools/conf-hooks.d/busybox 0644 0 0
+file /usr/share/initramfs-tools/hooks/zz-busybox ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/initramfs-tools/hooks/zz-busybox 0755 0 0
+file /usr/share/lintian/overrides/base-files ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/lintian/overrides/base-files 0644 0 0
+file /usr/share/lintian/overrides/busybox-static ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/lintian/overrides/busybox-static 0644 0 0
+file /usr/share/lintian/overrides/dash ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/lintian/overrides/dash 0644 0 0
+file /usr/share/lintian/overrides/libc6 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/lintian/overrides/libc6 0644 0 0
+file /usr/share/lintian/overrides/libgcc-s1 ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/lintian/overrides/libgcc-s1 0644 0 0
+dir /usr/share/locale/bg/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/ca/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/da/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/de/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/el/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/eo/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/es/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/et/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/eu/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/fa/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/fi/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/fr/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/ga/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/gl/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/he/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/hr/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/hu/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/id/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/it/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/ja/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/ka/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/ko/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/lv/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/ms/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/nb/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/nl/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/nn/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/pl/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/pt/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/pt_BR/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/ro/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/ru/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/sk/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/sl/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/sr/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/sv/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/th/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/tr/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/uk/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/vi/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/zh_CN/LC_MESSAGES 0755 0 0
+dir /usr/share/locale/zh_TW/LC_MESSAGES 0755 0 0
+dir /usr/share/man/de/man1 0755 0 0
+dir /usr/share/man/de/man8 0755 0 0
+dir /usr/share/man/es/man1 0755 0 0
+dir /usr/share/man/es/man8 0755 0 0
+dir /usr/share/man/fr/man1 0755 0 0
+dir /usr/share/man/fr/man8 0755 0 0
+dir /usr/share/man/it/man1 0755 0 0
+dir /usr/share/man/it/man8 0755 0 0
+dir /usr/share/man/ja/man1 0755 0 0
+dir /usr/share/man/ja/man8 0755 0 0
+file /usr/share/man/man1/busybox.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man1/busybox.1.gz 0644 0 0
+file /usr/share/man/man1/dash.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man1/dash.1.gz 0644 0 0
+file /usr/share/man/man1/hello.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man1/hello.1.gz 0644 0 0
+file /usr/share/man/man1/ischroot.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man1/ischroot.1.gz 0644 0 0
+file /usr/share/man/man1/mawk.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man1/mawk.1.gz 0644 0 0
+slink /usr/share/man/man1/sh.1.gz dash.1.gz 0777 0 0
+file /usr/share/man/man1/tempfile.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man1/tempfile.1.gz 0644 0 0
+file /usr/share/man/man1/which.debianutils.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man1/which.debianutils.1.gz 0644 0 0
+file /usr/share/man/man7/mawk-arrays.7.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man7/mawk-arrays.7.gz 0644 0 0
+file /usr/share/man/man7/mawk-code.7.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man7/mawk-code.7.gz 0644 0 0
+file /usr/share/man/man8/add-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man8/add-shell.8.gz 0644 0 0
+file /usr/share/man/man8/installkernel.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man8/installkernel.8.gz 0644 0 0
+file /usr/share/man/man8/remove-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man8/remove-shell.8.gz 0644 0 0
+file /usr/share/man/man8/run-parts.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man8/run-parts.8.gz 0644 0 0
+file /usr/share/man/man8/savelog.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man8/savelog.8.gz 0644 0 0
+file /usr/share/man/man8/update-shells.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/man8/update-shells.8.gz 0644 0 0
+dir /usr/share/man/pl/man1 0755 0 0
+dir /usr/share/man/pl/man8 0755 0 0
+dir /usr/share/man/pt/man1 0755 0 0
+dir /usr/share/man/pt/man8 0755 0 0
+dir /usr/share/man/sl/man1 0755 0 0
+dir /usr/share/man/sl/man8 0755 0 0
+file /usr/lib/riscv64-linux-gnu/gconv/gconv-modules.d/gconv-modules-extra.conf ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/lib/riscv64-linux-gnu/gconv/gconv-modules.d/gconv-modules-extra.conf 0644 0 0
+file /usr/share/doc/busybox-static/examples/mdev.conf ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/examples/mdev.conf 0644 0 0
+file /usr/share/doc/busybox-static/examples/mdev.conf.change_blockdev.sh ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/examples/mdev.conf.change_blockdev.sh 0755 0 0
+file /usr/share/doc/busybox-static/examples/mdev_fat.conf ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/examples/mdev_fat.conf 0644 0 0
+dir /usr/share/doc/busybox-static/examples/udhcp 0755 0 0
+file /usr/share/doc/mawk/examples/ct_length.awk ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/examples/ct_length.awk 0755 0 0
+file /usr/share/doc/mawk/examples/decl.awk ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/examples/decl.awk 0755 0 0
+file /usr/share/doc/mawk/examples/deps.awk ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/examples/deps.awk 0755 0 0
+file /usr/share/doc/mawk/examples/eatc.awk ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/examples/eatc.awk 0755 0 0
+file /usr/share/doc/mawk/examples/gdecl.awk ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/examples/gdecl.awk 0755 0 0
+file /usr/share/doc/mawk/examples/hcal ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/examples/hcal 0755 0 0
+file /usr/share/doc/mawk/examples/hical ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/examples/hical 0755 0 0
+file /usr/share/doc/mawk/examples/nocomment.awk ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/examples/nocomment.awk 0755 0 0
+file /usr/share/doc/mawk/examples/primes.awk ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/examples/primes.awk 0755 0 0
+file /usr/share/doc/mawk/examples/qsort.awk ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/mawk/examples/qsort.awk 0755 0 0
+file /usr/share/locale/bg/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/bg/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/ca/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/ca/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/da/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/da/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/de/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/de/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/el/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/el/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/eo/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/eo/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/es/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/es/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/et/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/et/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/eu/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/eu/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/fa/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/fa/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/fi/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/fi/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/fr/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/fr/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/ga/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/ga/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/gl/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/gl/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/he/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/he/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/hr/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/hr/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/hu/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/hu/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/id/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/id/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/it/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/it/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/ja/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/ja/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/ka/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/ka/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/ko/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/ko/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/lv/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/lv/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/ms/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/ms/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/nb/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/nb/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/nl/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/nl/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/nn/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/nn/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/pl/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/pl/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/pt/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/pt/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/pt_BR/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/pt_BR/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/ro/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/ro/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/ru/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/ru/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/sk/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/sk/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/sl/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/sl/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/sr/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/sr/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/sv/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/sv/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/th/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/th/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/tr/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/tr/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/uk/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/uk/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/vi/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/vi/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/zh_CN/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/zh_CN/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/locale/zh_TW/LC_MESSAGES/hello.mo ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/locale/zh_TW/LC_MESSAGES/hello.mo 0644 0 0
+file /usr/share/man/de/man1/which.debianutils.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/de/man1/which.debianutils.1.gz 0644 0 0
+file /usr/share/man/de/man8/add-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/de/man8/add-shell.8.gz 0644 0 0
+file /usr/share/man/de/man8/installkernel.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/de/man8/installkernel.8.gz 0644 0 0
+file /usr/share/man/de/man8/remove-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/de/man8/remove-shell.8.gz 0644 0 0
+file /usr/share/man/de/man8/run-parts.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/de/man8/run-parts.8.gz 0644 0 0
+file /usr/share/man/de/man8/savelog.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/de/man8/savelog.8.gz 0644 0 0
+file /usr/share/man/es/man1/which.debianutils.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/es/man1/which.debianutils.1.gz 0644 0 0
+file /usr/share/man/es/man8/add-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/es/man8/add-shell.8.gz 0644 0 0
+file /usr/share/man/es/man8/installkernel.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/es/man8/installkernel.8.gz 0644 0 0
+file /usr/share/man/es/man8/remove-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/es/man8/remove-shell.8.gz 0644 0 0
+file /usr/share/man/es/man8/run-parts.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/es/man8/run-parts.8.gz 0644 0 0
+file /usr/share/man/es/man8/savelog.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/es/man8/savelog.8.gz 0644 0 0
+file /usr/share/man/fr/man1/which.debianutils.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/fr/man1/which.debianutils.1.gz 0644 0 0
+file /usr/share/man/fr/man8/add-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/fr/man8/add-shell.8.gz 0644 0 0
+file /usr/share/man/fr/man8/installkernel.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/fr/man8/installkernel.8.gz 0644 0 0
+file /usr/share/man/fr/man8/remove-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/fr/man8/remove-shell.8.gz 0644 0 0
+file /usr/share/man/fr/man8/run-parts.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/fr/man8/run-parts.8.gz 0644 0 0
+file /usr/share/man/fr/man8/savelog.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/fr/man8/savelog.8.gz 0644 0 0
+file /usr/share/man/it/man1/which.debianutils.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/it/man1/which.debianutils.1.gz 0644 0 0
+file /usr/share/man/it/man8/add-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/it/man8/add-shell.8.gz 0644 0 0
+file /usr/share/man/it/man8/installkernel.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/it/man8/installkernel.8.gz 0644 0 0
+file /usr/share/man/it/man8/remove-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/it/man8/remove-shell.8.gz 0644 0 0
+file /usr/share/man/it/man8/run-parts.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/it/man8/run-parts.8.gz 0644 0 0
+file /usr/share/man/it/man8/savelog.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/it/man8/savelog.8.gz 0644 0 0
+file /usr/share/man/ja/man1/which.debianutils.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/ja/man1/which.debianutils.1.gz 0644 0 0
+file /usr/share/man/ja/man8/add-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/ja/man8/add-shell.8.gz 0644 0 0
+file /usr/share/man/ja/man8/installkernel.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/ja/man8/installkernel.8.gz 0644 0 0
+file /usr/share/man/ja/man8/remove-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/ja/man8/remove-shell.8.gz 0644 0 0
+file /usr/share/man/ja/man8/run-parts.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/ja/man8/run-parts.8.gz 0644 0 0
+file /usr/share/man/ja/man8/savelog.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/ja/man8/savelog.8.gz 0644 0 0
+file /usr/share/man/pl/man1/which.debianutils.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pl/man1/which.debianutils.1.gz 0644 0 0
+file /usr/share/man/pl/man8/add-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pl/man8/add-shell.8.gz 0644 0 0
+file /usr/share/man/pl/man8/installkernel.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pl/man8/installkernel.8.gz 0644 0 0
+file /usr/share/man/pl/man8/remove-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pl/man8/remove-shell.8.gz 0644 0 0
+file /usr/share/man/pl/man8/run-parts.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pl/man8/run-parts.8.gz 0644 0 0
+file /usr/share/man/pl/man8/savelog.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pl/man8/savelog.8.gz 0644 0 0
+file /usr/share/man/pt/man1/which.debianutils.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pt/man1/which.debianutils.1.gz 0644 0 0
+file /usr/share/man/pt/man8/add-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pt/man8/add-shell.8.gz 0644 0 0
+file /usr/share/man/pt/man8/installkernel.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pt/man8/installkernel.8.gz 0644 0 0
+file /usr/share/man/pt/man8/remove-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pt/man8/remove-shell.8.gz 0644 0 0
+file /usr/share/man/pt/man8/run-parts.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pt/man8/run-parts.8.gz 0644 0 0
+file /usr/share/man/pt/man8/savelog.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/pt/man8/savelog.8.gz 0644 0 0
+file /usr/share/man/sl/man1/which.debianutils.1.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/sl/man1/which.debianutils.1.gz 0644 0 0
+file /usr/share/man/sl/man8/add-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/sl/man8/add-shell.8.gz 0644 0 0
+file /usr/share/man/sl/man8/installkernel.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/sl/man8/installkernel.8.gz 0644 0 0
+file /usr/share/man/sl/man8/remove-shell.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/sl/man8/remove-shell.8.gz 0644 0 0
+file /usr/share/man/sl/man8/run-parts.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/sl/man8/run-parts.8.gz 0644 0 0
+file /usr/share/man/sl/man8/savelog.8.gz ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/man/sl/man8/savelog.8.gz 0644 0 0
+file /usr/share/doc/busybox-static/examples/udhcp/sample.bound ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/examples/udhcp/sample.bound 0755 0 0
+file /usr/share/doc/busybox-static/examples/udhcp/sample.deconfig ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/examples/udhcp/sample.deconfig 0755 0 0
+file /usr/share/doc/busybox-static/examples/udhcp/sample.nak ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/examples/udhcp/sample.nak 0755 0 0
+file /usr/share/doc/busybox-static/examples/udhcp/sample.renew ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/examples/udhcp/sample.renew 0755 0 0
+file /usr/share/doc/busybox-static/examples/udhcp/sample.script ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/examples/udhcp/sample.script 0755 0 0
+file /usr/share/doc/busybox-static/examples/udhcp/simple.script ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/examples/udhcp/simple.script 0755 0 0
+file /usr/share/doc/busybox-static/examples/udhcp/udhcpd.conf ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/doc/busybox-static/examples/udhcp/udhcpd.conf 0644 0 0
+nod /dev/console 0600 0 0 c 5 1
+nod /dev/null 0666 0 0 c 1 3
+dir /usr/local 0755 0 0
+dir /usr/local/libexec 0755 0 0
+file /etc/profile ${RESEARCH_ROOT}/build/rv64/r71-debian-minimal-r3/rootfs/usr/share/base-files/profile 0644 0 0
+file /usr/local/libexec/rv64-selftest ${RESEARCH_ROOT}/build/rv64/r54-linux-board-prep/rootfs/bin/linux-selftest 0755 0 0
+file /usr/local/libexec/rv64-fp-context ${RESEARCH_ROOT}/build/rv64/r65-gc-linux/fp-context-test.elf 0755 0 0
+file /usr/local/libexec/tty-drain ${RESEARCH_ROOT}/build/rv64/r69-gc-tty/tty-drain.elf 0755 0 0
+slink /usr/bin/cat busybox 0777 0 0
+slink /usr/bin/ls busybox 0777 0 0
+slink /usr/bin/mkdir busybox 0777 0 0
+slink /usr/bin/mount busybox 0777 0 0
+slink /usr/bin/umount busybox 0777 0 0
+slink /usr/bin/chmod busybox 0777 0 0
+slink /usr/bin/sync busybox 0777 0 0
+slink /usr/bin/uname busybox 0777 0 0
+slink /usr/bin/id busybox 0777 0 0
+slink /usr/bin/tty busybox 0777 0 0
+slink /usr/bin/cp busybox 0777 0 0
+slink /usr/bin/rm busybox 0777 0 0
+slink /usr/bin/mv busybox 0777 0 0
+slink /usr/bin/dmesg busybox 0777 0 0
+slink /usr/bin/ps busybox 0777 0 0
+slink /usr/bin/sleep busybox 0777 0 0
+slink /usr/bin/stty busybox 0777 0 0
+slink /usr/bin/printf busybox 0777 0 0
+slink /usr/bin/test busybox 0777 0 0
+slink /usr/bin/env busybox 0777 0 0
+slink /usr/bin/poweroff busybox 0777 0 0
+slink /usr/bin/reboot busybox 0777 0 0
+slink /usr/bin/halt busybox 0777 0 0
+slink /usr/bin/awk mawk 0777 0 0
+nod /dev/hvc0 0600 0 0 c 229 0
+file /usr/local/libexec/rv64-drm-selftest ${RESEARCH_ROOT}/build/rv64/r108-drm-userspace-r5/drm-selftest.elf 0755 0 0
+dir /opt 0755 0 0
+dir /opt/debian-graphics 0755 0 0
+dir /opt/debian-graphics/usr 0755 0 0
+dir /opt/debian-graphics/usr/bin 0755 0 0
+dir /opt/debian-graphics/usr/lib 0755 0 0
+dir /opt/debian-graphics/usr/lib/riscv64-linux-gnu 0755 0 0
+file /opt/debian-graphics/usr/bin/modetest ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/bin/modetest 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/ld-linux-riscv64-lp64d.so.1 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/ld-linux-riscv64-lp64d.so.1 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libBrokenLocale.so.1 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libBrokenLocale.so.1 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libanl.so.1 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libanl.so.1 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libc.so.6 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libc.so.6 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libc_malloc_debug.so.0 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libc_malloc_debug.so.0 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libdl.so.2 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libdl.so.2 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libdrm.so.2.124.0 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libdrm.so.2.124.0 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libdrm_amdgpu.so.1.124.0 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libdrm_amdgpu.so.1.124.0 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libgcc_s.so.1 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libgcc_s.so.1 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libm.so.6 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libm.so.6 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libmemusage.so ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libmemusage.so 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libnsl.so.1 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libnsl.so.1 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libnss_compat.so.2 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libnss_compat.so.2 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libnss_dns.so.2 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libnss_dns.so.2 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libnss_files.so.2 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libnss_files.so.2 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libnss_hesiod.so.2 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libnss_hesiod.so.2 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libpcprofile.so ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libpcprofile.so 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libpthread.so.0 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libpthread.so.0 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libresolv.so.2 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libresolv.so.2 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/librt.so.1 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/librt.so.1 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libthread_db.so.1 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libthread_db.so.1 0755 0 0
+file /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libutil.so.1 ${RESEARCH_ROOT}/build/rv64/r108-graphics-package-prep-r2/official-modetest-root/usr/lib/riscv64-linux-gnu/libutil.so.1 0755 0 0
+slink /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libdrm.so.2 libdrm.so.2.124.0 0777 0 0
+slink /opt/debian-graphics/usr/lib/riscv64-linux-gnu/libdrm_amdgpu.so.1 libdrm_amdgpu.so.1.124.0 0777 0 0
+file /usr/local/libexec/rv64-x11-ipc-probe ${RESEARCH_ROOT}/build/rv64/r109-graphics-userspace-r2/x11-ipc-probe.elf 0755 0 0
+file /usr/local/libexec/rv64-modetest-inventory ${RESEARCH_ROOT}/sw/rv64/r108-graphics-preparation/modetest-inventory.sh 0755 0 0
